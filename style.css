@@ -1,0 +1,247 @@
+/* ========== Giao diện tổng thể ========== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ========== Khu vực chính (Quiz) ========== */
+.quiz-section {
+  flex: 3;
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-top: 0;
+  color: #f8fafc;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+#question-number {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+#question-text {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/* ========== Nút lựa chọn đáp án ========== */
+.choice-btn {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+  padding: 12px 10px;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  background: #334155;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1em;
+}
+
+.choice-btn:hover:not(:disabled) {
+  background: #475569;
+}
+
+.choice-btn.correct {
+  background: #16a34a;
+  color: #fff;
+}
+
+.choice-btn.incorrect {
+  background: #dc2626;
+  color: #fff;
+}
+
+.choice-btn:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+/* ========== Nút điều hướng ========== */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  background: #334155;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background: #475569;
+}
+
+/* ========== Sidebar ========== */
+.sidebar {
+  flex: 1;
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+#question-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.grid-btn {
+  background: #334155;
+  border: none;
+  border-radius: 6px;
+  color: #e2e8f0;
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.grid-btn:hover {
+  background: #475569;
+}
+
+.grid-btn.answered {
+  background: #2563eb;
+}
+
+.sidebar-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-buttons button {
+  background: #334155;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar-buttons button:hover {
+  background: #475569;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.85em;
+  color: #94a3b8;
+}
+
+/* ========== RESPONSIVE: Dành cho điện thoại ========== */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .quiz-section, .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .quiz-section {
+    order: 1;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+
+  .choice-btn {
+    font-size: 1.05em;
+    padding: 14px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-buttons button {
+    width: 100%;
+    font-size: 1.05em;
+  }
+
+  #question-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+  }
+
+  .grid-btn {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+
+  .sidebar-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sidebar-buttons button {
+    flex: 1;
+    min-width: 45%;
+    font-size: 1em;
+  }
+}
+
+/* ========== RESPONSIVE: Màn hình nhỏ hơn 500px ========== */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.4em;
+  }
+
+  #question-text {
+    font-size: 1em;
+  }
+
+  .grid-btn {
+    font-size: 0.9em;
+  }
+
+  .sidebar-buttons button {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}

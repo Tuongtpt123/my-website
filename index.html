@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ôn tập - 120 câu trắc nghiệm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-section">
+      <h1>Ôn tập - 120 câu trắc nghiệm</h1>
+      <p class="subtitle">Nguồn câu: On Tap.docx</p>
+
+      <div id="question-number"></div>
+      <div id="question-text"></div>
+      <div id="choices"></div>
+
+      <div class="nav-buttons">
+        <button id="prev-btn">‹ Trước</button>
+        <button id="next-btn">Tiếp ›</button>
+        <!-- Nút “Nộp bài” đã được bỏ -->
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h2>Tổng quan</h2>
+      <div id="question-grid"></div>
+
+      <div class="sidebar-buttons">
+        <button id="shuffle-btn">Xáo câu</button>
+        <button id="clear-progress-btn">Xóa tiến độ</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>Ứng dụng chạy hoàn toàn offline trên trình duyệt.</footer>
+
+  <script src="questions.js"></script>
+  <script>
+    let currentIndex = 0;
+
+    const questionNumber = document.getElementById("question-number");
+    const questionText = document.getElementById("question-text");
+    const choicesContainer = document.getElementById("choices");
+    const questionGrid = document.getElementById("question-grid");
+
+    function renderQuestion() {
+      const q = questions[currentIndex];
+      questionNumber.textContent = `Câu ${q.id}/${questions.length}`;
+      questionText.innerHTML = `<strong>${q.text}</strong>`;
+      choicesContainer.innerHTML = "";
+
+      for (const [key, value] of Object.entries(q.choices)) {
+        const btn = document.createElement("button");
+        btn.textContent = `${key}. ${value}`;
+        btn.className = "choice-btn";
+
+        btn.addEventListener("click", () => {
+          const all = choicesContainer.querySelectorAll("button");
+          all.forEach(b => b.disabled = true);
+
+          if (key === q.answer) {
+            btn.classList.add("correct");
+          } else {
+            btn.classList.add("incorrect");
+            const correctBtn = Array.from(all).find(b => b.textContent.startsWith(q.answer + "."));
+            if (correctBtn) correctBtn.classList.add("correct");
+          }
+
+          // đánh dấu trong lưới câu hỏi
+          document.querySelectorAll(".grid-btn")[currentIndex].classList.add("answered");
+        });
+
+        choicesContainer.appendChild(btn);
+      }
+    }
+
+    function renderGrid() {
+      questionGrid.innerHTML = "";
+      questions.forEach((q, i) => {
+        const btn = document.createElement("button");
+        btn.textContent = q.id;
+        btn.className = "grid-btn";
+        btn.addEventListener("click", () => {
+          currentIndex = i;
+          renderQuestion();
+        });
+        questionGrid.appendChild(btn);
+      });
+    }
+
+    document.getElementById("next-btn").onclick = () => {
+      if (currentIndex < questions.length - 1) currentIndex++;
+      renderQuestion();
+    };
+    document.getElementById("prev-btn").onclick = () => {
+      if (currentIndex > 0) currentIndex--;
+      renderQuestion();
+    };
+
+    document.getElementById("shuffle-btn").onclick = () => {
+      questions.sort(() => Math.random() - 0.5);
+      renderGrid();
+      currentIndex = 0;
+      renderQuestion();
+    };
+
+    document.getElementById("clear-progress-btn").onclick = () => {
+      document.querySelectorAll(".grid-btn").forEach(b => b.classList.remove("answered"));
+    };
+
+    renderGrid();
+    renderQuestion();
+  </script>
+</body>
+</html>
