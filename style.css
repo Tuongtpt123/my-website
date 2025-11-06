@@ -22,7 +22,7 @@ body {
   background: #1e293b;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -109,7 +109,7 @@ h1 {
   background: #1e293b;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar h2 {
@@ -140,6 +140,10 @@ h1 {
 .grid-btn.answered {
   background: #2563eb;
 }
+
+.grid-btn.wrong {
+    background: #dc2626;
+  }
 
 .sidebar-buttons {
   margin-top: 20px;
@@ -175,7 +179,8 @@ footer {
     padding: 10px;
   }
 
-  .quiz-section, .sidebar {
+  .quiz-section,
+  .sidebar {
     width: 100%;
     padding: 15px;
   }

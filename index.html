@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ôn tập - 120 câu trắc nghiệm</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <div class="quiz-section">
@@ -69,7 +71,14 @@
           }
 
           // đánh dấu trong lưới câu hỏi
-          document.querySelectorAll(".grid-btn")[currentIndex].classList.add("answered");
+          const gridBtn = document.querySelectorAll(".grid-btn")[currentIndex];
+          gridBtn.classList.remove("answered", "wrong"); // xóa trạng thái cũ
+
+          if (key === q.answer) {
+            gridBtn.classList.add("answered"); // đúng thì tô xanh
+          } else {
+            gridBtn.classList.add("wrong"); // sai thì tô đỏ
+          }
         });
 
         choicesContainer.appendChild(btn);
@@ -114,4 +123,5 @@
     renderQuestion();
   </script>
 </body>
+
 </html>
