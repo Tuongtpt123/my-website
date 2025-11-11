@@ -4,25 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ôn tập - 120 câu trắc nghiệm</title>
+  <title>Ôn tập trắc nghiệm - Nhiều bộ đề</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="tabs">
+    <button class="tab-btn active" data-file="questions1.js">Đề 1</button>
+    <button class="tab-btn" data-file="questions2.js">Đề 2</button>
+  </div>
+
   <div class="container">
     <div class="quiz-section">
       <h1>Ôn tập - 120 câu trắc nghiệm</h1>
-      <p class="subtitle">Nguồn câu: On Tap.docx</p>
-
+      <p class="subtitle">Chọn đề ở trên để bắt đầu</p>
+      <div class="nav-buttons">
+        <button id="prev-btn">‹ Trước</button>
+        <button id="next-btn">Tiếp ›</button>
+      </div>
       <div id="question-number"></div>
       <div id="question-text"></div>
       <div id="choices"></div>
 
-      <div class="nav-buttons">
-        <button id="prev-btn">‹ Trước</button>
-        <button id="next-btn">Tiếp ›</button>
-        <!-- Nút “Nộp bài” đã được bỏ -->
-      </div>
+
     </div>
 
     <div class="sidebar">
@@ -36,19 +40,46 @@
     </div>
   </div>
 
-  <footer>Ứng dụng chạy hoàn toàn offline trên trình duyệt.</footer>
+  <footer>Ứng dụng chạy hoàn toàn offline. Mỗi tab tương ứng một bộ đề riêng.</footer>
 
-  <script src="questions.js"></script>
   <script>
+    let questions = [];
     let currentIndex = 0;
+    let currentFile = null;
 
     const questionNumber = document.getElementById("question-number");
     const questionText = document.getElementById("question-text");
     const choicesContainer = document.getElementById("choices");
     const questionGrid = document.getElementById("question-grid");
 
+    // === Hàm tải file đề ===
+    async function loadQuestions(file) {
+      currentFile = file;
+      const res = await fetch(file);
+      const text = await res.text();
+
+      // Tách phần JSON từ file questions.js (bỏ const ... ;)
+      const jsonText = text
+        .replace(/^const\s+questions\s*=\s*/, "")
+        .replace(/;$/, "");
+
+      try {
+        questions = JSON.parse(jsonText);
+      } catch (err) {
+        console.error("❌ Lỗi khi đọc file:", file, err);
+        alert("Không thể đọc file " + file);
+        return;
+      }
+
+      currentIndex = 0;
+      renderGrid();
+      renderQuestion();
+    }
+
+
     function renderQuestion() {
       const q = questions[currentIndex];
+      if (!q) return;
       questionNumber.textContent = `Câu ${q.id}/${questions.length}`;
       questionText.innerHTML = `<strong>${q.text}</strong>`;
       choicesContainer.innerHTML = "";
@@ -62,22 +93,17 @@
           const all = choicesContainer.querySelectorAll("button");
           all.forEach(b => b.disabled = true);
 
+          const gridBtn = document.querySelectorAll(".grid-btn")[currentIndex];
+          gridBtn.classList.remove("answered", "wrong");
+
           if (key === q.answer) {
             btn.classList.add("correct");
+            gridBtn.classList.add("answered");
           } else {
             btn.classList.add("incorrect");
+            gridBtn.classList.add("wrong");
             const correctBtn = Array.from(all).find(b => b.textContent.startsWith(q.answer + "."));
             if (correctBtn) correctBtn.classList.add("correct");
-          }
-
-          // đánh dấu trong lưới câu hỏi
-          const gridBtn = document.querySelectorAll(".grid-btn")[currentIndex];
-          gridBtn.classList.remove("answered", "wrong"); // xóa trạng thái cũ
-
-          if (key === q.answer) {
-            gridBtn.classList.add("answered"); // đúng thì tô xanh
-          } else {
-            gridBtn.classList.add("wrong"); // sai thì tô đỏ
           }
         });
 
@@ -116,11 +142,20 @@
     };
 
     document.getElementById("clear-progress-btn").onclick = () => {
-      document.querySelectorAll(".grid-btn").forEach(b => b.classList.remove("answered"));
+      document.querySelectorAll(".grid-btn").forEach(b => b.classList.remove("answered", "wrong"));
     };
 
-    renderGrid();
-    renderQuestion();
+    // === Tabs chuyển đề ===
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        loadQuestions(btn.dataset.file);
+      });
+    });
+
+    // Tự động tải đề đầu tiên
+    loadQuestions("questions1.js");
   </script>
 </body>
 
