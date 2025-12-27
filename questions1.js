@@ -1,442 +1,1058 @@
 const questions = [
   {
     "id": 1,
-    "text": "1. Hiện nay có bao nhiêu cách để phát triển ứng dụng cho thiết bị di động? Cách nào là cơ bản nhất mà người phát triển ứng dụng cho thiết bị di động phải học trước tiên?",
+    "text": "1. Thành phần nào KHÔNG thuộc định nghĩa đầy đủ của phần mềm theo McDermid?",
     "choices": {
-      "A": "Có 4 cách để phát triển ứng dụng cho thiết bị di động. Cách phát triển ứng dụng trên nền tảng chéo (Cross platform) là cơ bản nhất",
-      "B": "Có 5 cách để phát triển ứng dụng cho thiết bị di động. Cách phát triển ứng dụng trên nền tảng gốc (Native platform) là cơ bản nhất",
-      "C": "Có 5 cách để phát triển ứng dụng cho thiết bị di động. Cách phát triển ứng dụng kiểu lập trình nhúng là cơ bản nhất",
-      "D": "Có 4 cách để phát triển ứng dụng cho thiết bị di động. Cách phát triển ứng dụng lai (Hydrid Apps) là cơ bản nhất"
+      "A": "Mã nguồn và mã đối tượng",
+      "B": "Tài liệu (đặc tả, thiết kế, kiểm thử, hướng dẫn",
+      "C": "Thủ tục vận hành",
+      "D": "Máy chủ vật lý và cơ sở hạ tầng mạng"
     },
-    "answer": "B"
+    "answer": "D"
   },
   {
     "id": 2,
-    "text": "2. Khái niệm trừu tượng (abstraction) trong lập trình gồm những thành phần như:",
+    "text": "2. Theo chuẩn IEEE 1219, bảo trì phần mềm là gì?",
     "choices": {
-      "A": "Những môi trường phát triển phần mềm (SDE",
-      "B": "Là những phần mềm nằm giữa phần cứng và môi trường phát triển ứng dụng như: menu, database, file systems, related runtime libraries, API,…",
-      "C": "Máy ảo (Emulator",
-      "D": "Là lớp (class) không thể được dùng để tạo ra các đối tượng như những lớp bình thường khác"
+      "A": "\tPhát triển hoàn toàn hệ thống mới từ đầu",
+      "B": "\tSửa đổi sản phẩm sau khi phát hành để hiệu chỉnh lỗi, cải thiện hiệu năng hoặc thích ứng với môi trường mới",
+      "C": "\tChỉ bao gồm việc sửa lỗi (bug fixing",
+      "D": "\tToàn bộ hoạt động từ lúc bắt đầu dự án đến khi kết thúc"
     },
     "answer": "B"
   },
   {
     "id": 3,
-    "text": "3. IDE (integrated design environment hay integrated debugging environment) là:",
+    "text": "3. Yêu cầu thay đổi nào phát sinh từ nhu cầu làm cho phần mềm chạy trên hệ điều hành mới?",
     "choices": {
-      "A": "Một hệ điều hành hay một máy ảo (virtual machine) trên đỉnh của phần cứng, nó cho khả năng viết code một lần để phát triển ứng dụng chạy trên nhiều nền tảng",
-      "B": "Một tổng thể (gồm cả phần cứng lẫn phần mềm) mà nó cung cấp toàn bộ các phương tiện để người lập trình máy tính phát triển phần mềm ứng dụng",
-      "C": "Một phần mềm ứng dụng mà nó cung cấp toàn bộ các phương tiện để người lập trình máy tính phát triển phần mềm ứng dụng trên một hoặc nhiều nền tảng",
-      "D": "Một môi trường lập trình hỗ trợ nhiều ngôn ngữ lập trình khác nhau để lập trình phát triển ứng dụng, sau đó biên dịch sang một ngôn ngữ trung gian (bytecode) và ứng dụng chỉ chạy trên một hệ điều hành"
+      "A": "Thay đổi hiệu chỉnh",
+      "B": "Thay đổi thích ứng",
+      "C": "Thay đổi hoàn thiện",
+      "D": "Thay đổi dự phòng"
     },
-    "answer": "C"
+    "answer": "B"
   },
   {
     "id": 4,
-    "text": "4. Kiến trúc Thin-Client Wireless Client-Server là:",
+    "text": "4. Hoạt động nào giúp \"làm thuận tiện công việc bảo trì tương lai\"?",
     "choices": {
-      "A": "Kiến trúc mà khi client truyền thông với server, nó có thể thực thi vài việc và server thực hiện các việc khác. Vì vậy không cần kết nối mạng liên tục và ổn định",
-      "B": "Kiến trúc mà ứng dụng được thực hiện bởi server. Vì vậy đòi hỏi client phải kết nối mạng liên tục và ổn định với server, tương ứng với tập các đặc tính kỹ thuật chung nhỏ nhất của các thiết bị và platform",
-      "C": "Kiến trúc truyền thông theo giao thức TCP/IP",
-      "D": "Kiến trúc truyền thông theo giao thức UDP"
+      "A": "\tSửa lỗi khẩn cấp",
+      "B": "\tCấu trúc lại (refactor) code và cập nhật tài liệu",
+      "C": "\tChỉ nâng cấp phần cứng",
+      "D": "\tGiảm thiểu tương tác với người dùng"
     },
     "answer": "B"
   },
   {
     "id": 5,
-    "text": "5. Ứng dụng lai (Hybrid application) là ứng dụng như thế nào?",
+    "text": "5. Loại yêu cầu thay đổi nào bắt nguồn từ việc mở rộng chức năng hiện có của hệ thống?",
     "choices": {
-      "A": "Là ứng dụng chỉ cần lập trình một lần trên một môi trường và có thể chạy trên nhiều nền tảng khác nhau",
-      "B": "Là ứng ứng có thể chạy đồng thời trên máy tính PC, trên Smart phone và Tablet",
-      "C": "Là ứng dụng thể chạy đồng thời trên máy tính PC, trên Smart phone, Tablet và Mobile web",
-      "D": "Là ứng dụng cho thiết bị di động chạy trên nền web, được lập trình trên một môi trường phát triển chạy trên các thiết bị di động với các nền tảng khác nhau"
+      "A": "Thay đổi hiệu chỉnh",
+      "B": "Thay đổi thích ứng",
+      "C": "Thay đổi hoàn thiện",
+      "D": "Thay đổi dự phòng"
     },
-    "answer": "D"
+    "answer": "C"
   },
   {
     "id": 6,
-    "text": "6. Quá trình phát triển của mạng viễn thông di động trải qua các thế hệ 1G, 2G, 3G, 4G, 5G. Sự chuyển đổi từ chuyển từ kỹ thuật tương tự (analog) sang kỹ thuật số (digital) điễn ra trong thế hệ nào?",
+    "text": "6. Yếu tố nào sau đây là một trở ngại chính cho việc thay đổi phần mềm?",
     "choices": {
-      "A": "2G",
-      "B": "3G",
-      "C": "4 G",
-      "D": "Áp dụng kỹ thuật số ngay từ đầu"
+      "A": "\tChất lượng hệ thống hiện hành quá tốt",
+      "B": "\tCó đầy đủ tài liệu cập nhật",
+      "C": "\tThiếu bảo trì viên được đào tạo và có kỹ năng",
+      "D": "\tNgười dùng luôn nhiệt tình đón nhận thay đổi"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 7,
-    "text": "7. Phân biệt mạng Piconet và Scatternet trong kỹ thuật Bluetooth",
+    "text": "7. Yếu tố nhân sự nào ảnh hưởng lớn đến bảo trì do việc hầu hết hệ thống được bảo trì bởi người không phải tác giả gốc?",
     "choices": {
-      "A": "Scatternet là mạng liên kết các thiết bị cùng cấp, Piconet là mạng liên kết giữa các Scatternet",
-      "B": "Piconet là mạng liên kết các thiết bị cùng cấp,  Scatternet là mạng liên kết giữa các Piconet",
-      "C": "Piconet là mạng liên kết các thiết bị cùng loại,  Scatternet là mạng liên kết giữa các thiết bị khác loại",
-      "D": "Piconet là mạng liên kết các thiết bị khác loại,  Scatternet là mạng liên kết giữa các thiết bị cùng loại"
+      "A": "Thực tiễn làm việc",
+      "B": "Sự thành thạo về lĩnh vực",
+      "C": "Tốc độ thay thế nhân viên",
+      "D": "Mức lương"
     },
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 8,
-    "text": "8. Điện thoại Android đầu tiên tên gì? Ra mắt năm nào?",
+    "text": "8. Việc \"hiểu chương trình\" (program comprehension) chiếm khoảng bao nhiêu phần trăm công sức bảo trì?",
     "choices": {
-      "A": "T-Mobile G1 – 1, 2007",
-      "B": "Nexus – one, 2008",
-      "C": "T-Mobile G1 – 1, 2008",
-      "D": "HTC One, 2008"
+      "A": "10%",
+      "B": "25%",
+      "C": "Khoảng 40-60%",
+      "D": "90%"
     },
     "answer": "C"
   },
   {
     "id": 9,
-    "text": "9. Mỗi phiên bản của hệ điều hành Android có 3 tên đại diện là gì? Cho biết các tên này ứng với phiên bản mới nhất hiện nay (tính đến tháng 08/2023)?",
+    "text": "9. Chi phí sửa lỗi (fixing bugs) cao nhất ở giai đoạn nào trong chu kỳ sống phần mềm?",
     "choices": {
-      "A": "3 tên đại diện cho phiên bản là: Release number, Target  name và API level. Tương ứng với phiên bản mới nhật hiện nay là Release number = 14, Target name = S và API level = 34",
-      "B": "3 tên đại diện cho phiên bản là: Version number, Target name và API. Tương ứng với phiên bản mới nhật hiện nay là Version number = 12.0, Target name = S và API = 31",
-      "C": "3 tên đại diện cho phiên bản là: Target, Version name và API level. Tương ứng với phiên bản mới nhật hiện nay là Target = 12L, Release name = Sv2 và API level = 32",
-      "D": "3 tên đại diện cho phiên bản là: Target, Release name và API level. Tương ứng với phiên bản mới nhật hiện nay là Target = 13, Release name = Tiramisu và API level = 33"
+      "A": "Phân tích và đặc tả yêu cầu",
+      "B": "Thiết kế",
+      "C": "Lập trình",
+      "D": "Vận hành và bảo trì"
     },
     "answer": "D"
   },
   {
     "id": 10,
-    "text": "10. Kiến trúc của hệ điều hành Android bao gồm các tầng như sau:",
+    "text": "10. Tại sao việc phân loại các yêu cầu thay đổi (hiệu chỉnh, thích ứng, hoàn thiện, dự phòng) lại quan trọng, mặc dù chúng thường đan xen trong thực tế?",
     "choices": {
-      "A": "Linux Kernel; Library - Android runtime; Application Framework; Applications",
-      "B": "Linux Kernel; Library; Android runtime; Application Framework; Applications",
-      "C": "Unix Kernel; Library; Android runtime; Applications",
-      "D": "Linux Kernel; Application Framework; Virtual machine; Applications"
+      "A": "\tĐể tăng số lượng công việc cho nhóm bảo trì",
+      "B": "\tĐể xác định và ưu tiên giải quyết các yêu cầu một cách hiệu quả hơn",
+      "C": "\tĐể có thể bỏ qua một số loại yêu cầu",
+      "D": "\tChỉ để phục vụ cho mục đích báo cáo, không ảnh hưởng đến thực thi"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 11,
-    "text": "11. Một trong các ưu điểm của nền tảng Android là tính năng mở, tính năng mở có nghĩa là:",
+    "text": "11. Mối quan hệ \"Sản phẩm/Môi trường\" trong khung làm việc bảo trì được hiểu là:",
     "choices": {
-      "A": "Mã nguồn mở",
-      "B": "Không tốn phí cho môi trường phát triển ứng dụng",
-      "C": "Có thể chạy thử phần mềm trực tiếp trên máy thật trong khi lập trình phát triển",
-      "D": "Tất cả các câu trả lời đều đúng"
+      "A": "\tMôi trường được tạo ra bởi sản phẩm phần mềm",
+      "B": "\tSản phẩm phần mềm tồn tại độc lập, không chịu tác động từ môi trường",
+      "C": "\tSản phẩm phần mềm phải \"kế thừa\" những thay đổi trong môi trường điều hành và tổ chức",
+      "D": "\tMôi trường chỉ ảnh hưởng đến nhân sự, không ảnh hưởng đến sản phẩm"
     },
-    "answer": "D"
+    "answer": "C"
   },
   {
     "id": 12,
-    "text": "12. Trong 6 thành phần của ứng dụng Android có 4 thành phần chính cấu thành ứng dụng là:",
+    "text": "12. Tại sao các hệ thống \"già\" (legacy) lại là trở ngại lớn cho việc thay đổi?",
     "choices": {
-      "A": "Activity, Service, Broadcast Receiver và Content Provider là 4 thành phần chính cấu thành nên ứng dụng Android, cần khai báo trong AndroidManifest",
-      "B": "Activity, Service, Broadcast Receiver và Intent là 4 thành phần chính cấu thành nên ứng dụng Android, cần khai báo trong AndroidManifest",
-      "C": "Activity, Service, Intent và Content Provider là 4 thành phần chính cấu thành nên ứng dụng Android, cần khai báo trong AndroidManifest",
-      "D": "Activity, Intent, Broadcast Receiver và Content Provider là 4 thành phần chính cấu thành nên ứng dụng Android, cần khai báo trong AndroidManifest"
+      "A": "\tVì chúng quá phức tạp, việc thay đổi là không thể",
+      "B": "\tVì chúng thường có chất lượng kém sau nhiều lần sửa chữa, cấu trúc phức tạp, tài liệu thiếu",
+      "C": "\tVì không ai muốn sử dụng chúng nữa nên không cần thiết thay đổi",
+      "D": "\tVì chúng chạy quá chậm, khó kiểm soát"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 13,
-    "text": "13. Activity là  thành phần trong một ứng dụng Android:",
+    "text": "13. Bảo trì dự phòng (Preventive) được coi là \"chủ động\" hay \"bị động\"?",
     "choices": {
-      "A": "Trong mỗi ứng dụng đều phải có Activity",
-      "B": "Mỗi Activity tương ứng với một giao diện người dùng",
-      "C": "Một ứng dụng có thể có một hoặc nhiều Activity",
-      "D": "Tất cả các câu trả lời đúng"
+      "A": "\tBị động, chờ lỗi xảy ra mới sửa",
+      "B": "\tChủ động, tìm kiếm và sửa các vấn đề tiềm ẩn trước khi chúng gây ra lỗi",
+      "C": "\tBị động, chỉ làm khi khách hàng yêu cầu",
+      "D": "\tChủ động khi biết được các thay đổi của môi trường hoặc pháp luật"
     },
-    "answer": "D"
+    "answer": "B"
   },
   {
     "id": 14,
-    "text": "14. Khi mở project mới ta cần khai báo chọn bao nhiên phiên bản, những phiên bản nào ? Tại sao ?",
+    "text": "14. Một lập trình viên khi đọc code của module \"Xử lý đơn hàng\" thấy rằng có nhiều đoạn code trùng lặp ở 5 nơi khác nhau. Anh ta quyết định tái cấu trúc (refactor), gom chúng vào một hàm duy nhất để dễ quản lý và giảm khả năng sai sót khi cần sửa đổi sau này. Anh ta đang thực hiện loại bảo trì nào?",
     "choices": {
-      "A": "Cần khai báo 3 phiên bản: 1 để biên dịch (mới nhất, mặc định), 1 phiên bản cũ nhất có thể chạy được ứng dụng và 1 phiên bản trung gian để chạy thử ứng dụng",
-      "B": "Cần khai báo từ 3 phiên bản trở lên: 1 để biên dịch (mới nhất), 1 phiên bản cũ nhất có thể chạy được ứng dụng và các phiên bản trung gian để chạy thử ứng dụng bằng máy ảo",
-      "C": "Cần khai báo 2 phiên bản: 1 để biên dịch (mới nhất, mặc định), 1 phiên bản cũ nhất có thể chạy được ứng dụng",
-      "D": "Cần khai báo 1 phiên bản mới nhất (mặc định"
+      "A": "Bảo trì hiệu chỉnh",
+      "B": "Bảo trì hoàn thiện",
+      "C": "Bảo trì dự phòng",
+      "D": "Bảo trì thích ứng"
     },
     "answer": "C"
   },
   {
     "id": 15,
-    "text": "15. Explicit Intents là:",
+    "text": "15. Điểm yếu lớn nhất của mô hình Hiệu chỉnh nhanh là gì?",
     "choices": {
-      "A": "Intent được chỉ xác định hành động cần thực hiện khi không chỉ định thành phần  cần gọi để xử lý",
-      "B": "Intent cần khai báo rõ các thuộc tính action, data",
-      "C": "Intent thường được sử dụng để khởi chạy các ứng dụng đã được cài đặt trên thiết bị",
-      "D": "Intent đã được xác định thuộc tính component, nghĩa là đã chỉ rõ thành phần sẽ nhận và xử lý. Explicit Intent thường được sử dụng để khởi chạy các activity trong cùng một ứng dụng"
+      "A": "Tốc độ xử lý chậm",
+      "B": "Thiếu phân tích tác động và quản lý rủi ro",
+      "C": "Chi phí triển khai ban đầu cao",
+      "D": "Không phù hợp với hệ thống nhỏ"
     },
-    "answer": "D"
+    "answer": "B"
   },
   {
     "id": 16,
-    "text": "16. Lập trình giao diện người dùng mức cao là:",
+    "text": "16. Mô hình lặp và tăng trưởng dựa trên giả định cơ bản nào?",
     "choices": {
-      "A": "Cách tạo giao diện người dùng tùy biến bằng các đối tượng do người lập trình tạo ra",
-      "B": "Cách lập trình xây dựng giao diện người dùng sử dụng các kiểu giao diện được định nghĩa (Layout) và các đối tượng có sẵn (View) trong Android SDK",
-      "C": "Cách lập trình sử dụng công cụ kéo thả trong Android Studio",
-      "D": "Cách lập trình viết cách viết code mà không dùng công cụ kéo thả trong Android Studio"
+      "A": "\tYêu cầu luôn ổn định và đầy đủ ngay từ đầu",
+      "B": "\tYêu cầu chỉ được làm rõ sau nhiều lần lặp và phản hồi",
+      "C": "\tTài liệu quan trọng hơn mã nguồn",
+      "D": "\tNgười dùng không cần tham gia vào quá trình"
     },
     "answer": "B"
   },
   {
     "id": 17,
-    "text": "17. Khi sử dụng LinearLayout cần phải khai báo thêm thuộc tính gì?",
+    "text": "17. Chuẩn IEEE 1219 (1998) tổ chức quy trình bảo trì thành mấy giai đoạn chính?",
     "choices": {
-      "A": "Thuộc tính android:orientation",
-      "B": "Thuộc tính android:layout_gravity",
-      "C": "Không bắt buột khai báo thêm",
-      "D": "Thuộc tính android:layout_width và android:layout_height"
+      "A": "5 giai đoạn",
+      "B": "6 giai đoạn",
+      "C": "7 giai đoạn",
+      "D": "8 giai đoạn"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 18,
-    "text": "18. Trong Android, để Activity (giả sử viết bằng ngôn ngữ Java) hiển thị một giao diện ta sử dụng phương thức và câu lệnh như sau (Giả sử “giaodien” là tên giao diện được chọn để hiển thị).:",
+    "text": "18. Điều khoản nào sau đây thường KHÔNG xuất hiện trong một hợp đồng bảo trì chuẩn?",
     "choices": {
-      "A": "setLayoutView(R.layout.giaodien);",
-      "B": "setIntentView(R.layout.giaodien);",
-      "C": "setContentView(R.layout.giaodien);",
-      "D": "setContentLayout(R.layout.giaodien);"
+      "A": "Các định nghĩa thuật ngữ",
+      "B": "Phạm vi dịch vụ bảo trì",
+      "C": "Mã nguồn đầy đủ của phần mềm",
+      "D": "Điều khoản về chi phí và thanh toán"
     },
     "answer": "C"
   },
   {
     "id": 19,
-    "text": "19. Để sử dụng đối tượng ImageView ta phải lưu tên tập tin của ảnh muốn hiển thị vào đâu và câu lệnh bắt buộc (không mặc định) trong mã nguồn xml là gì?",
+    "text": "19. Kiểm thử hồi quy (Regression Testing) nhằm mục đích chính nào?",
     "choices": {
-      "A": "Lưu ảnh vào thư mục res/drawable và câu lệnh xml bắt buộc phải khai báo là android:src=”@drawable/”tên tập tin ảnh”",
-      "B": "Lưu ảnh vào thư mục res/layout và câu lệnh xml bắt buộc phải khai báo là android:contentDescription=”@drawable/”tên tập tin ảnh”",
-      "C": "Lưu ảnh vào thư mục res/mipmap và câu lệnh xml bắt buộc phải khai báo là android:src=”@drawable/”tên tập tin ảnh”",
-      "D": "Tất cả A, B và C đều sai"
+      "A": "\tPhát hiện các lỗi mới trong chức năng vừa thêm",
+      "B": "\tĐảm bảo thay đổi mới không làm hỏng chức năng hiện có",
+      "C": "\tKiểm tra hiệu năng của hệ thống dưới tải cao",
+      "D": "\tĐánh giá trải nghiệm người dùng"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 20,
-    "text": "20. Cách ánh xạ một View trong tập tin Layout.xml vào mã nguồn Java của Activity tương ứng? Cho ví dụ.",
+    "text": "20. Kế hoạch bảo trì nên được lập tốt nhất vào thời điểm nào?",
     "choices": {
-      "A": "Dùng phương thức setContentView(R.id.tên định danh của View); Ví dụ:",
-      "B": "Dùng phương thức findViewById(R.id.tên định danh của View); Ví dụ:",
-      "C": "Dùng phương thức getViewById(R.layout.R.layout.tên định danh của View); Ví dụ:",
-      "D": "Tất cả A, B và C đều sai"
+      "A": "Chỉ sau khi phần mềm gặp sự cố đầu tiên",
+      "B": "Trong giai đoạn phát triển phần mềm",
+      "C": "Sau khi hợp đồng bảo trì đã ký kết",
+      "D": "Khi dự án sắp kết thúc"
     },
     "answer": "B"
   },
   {
     "id": 21,
-    "text": "21. Bằng cách gom nhóm các RadioButton vào một RadioGroup cho phép:",
+    "text": "21. Thách thức lớn nhất trong giai đoạn \"Chuyển tiếp\" (Transition) thường là gì?",
     "choices": {
-      "A": "Có thể check nhiều RadioButton trong cùng một nhóm",
-      "B": "Chỉ được check chọn một RadioButton trong cùng một nhóm",
-      "C": "Khi check một RadioButton thì tất cả các RadioButton trong cùng nhóm đều được check",
-      "D": "Tuỳ thuộc vào giá trị của thuộc tính check được khai báo trong tập tin layout mà các RadioButton có thể bị hạn chế chỉ check chọn một RadioButton trong cùng một nhóm hay có thể check chọn cùng lúc nhiều RadioButton trong cùng một nhóm"
+      "A": "\tChi phí mua phần cứng mới",
+      "B": "\tViệc chuyển giao tri thức và kinh nghiệm phi tài liệu (tacit knowledge) về hệ thống",
+      "C": "\tĐào tạo người dùng về các tính năng cơ bản",
+      "D": "\tThay đổi về môi trường hoạt động"
     },
     "answer": "B"
   },
   {
     "id": 22,
-    "text": "22. Người lập trình phát triển ứng dụng có thể kết hợp giao diện mức cao và mức thấp bằng cách nào?",
+    "text": "22. Việc lưu giữ dữ liệu và phần mềm cũ sau khi \"Ngưng sử dụng\" chủ yếu phục vụ mục đích gì?",
     "choices": {
-      "A": "Trong giao diện mức cao ta có thể lồng vào giao diện mức thấp",
-      "B": "Trong giao diện mức thấp ta có thể lồng vào giao diện mức cao",
-      "C": "Từ Activity có giao diện mức thấp gọi gọi Activity có giao diện mức cao hoặc ngược lại",
-      "D": "Tất cả các câu trả lời đều đúng"
+      "A": "Để bán lại cho các công ty khác",
+      "B": "Để khôi phục trong trường hợp khẩn cấp",
+      "C": "Để giảm tải cho hệ thống lưu trữ hiện tại",
+      "D": "Để sử dụng lại cho các dự án hoàn toàn mới"
     },
-    "answer": "D"
+    "answer": "B"
   },
   {
     "id": 23,
-    "text": "23. Các bước lập trình  xử lý tương tác của người dùng lên các View như sau:",
+    "text": "23. Nếu một yêu cầu thay đổi bị từ chối ở giai đoạn \"Phân tích\", lý do chính thường là gì?",
     "choices": {
-      "A": "Khai báo View trong Layout  Ánh xạ View này vào Activity tương ứng bằng phương thức findViewById(R.id.<tên định danh của View>)  Sử dụng phương  thức setOnClickListener() kết hợp với onClick(",
-      "B": "Khai báo View trong Layout  Tạo phương thức xử lý tương tác của người dùng trong Activity tương ứng, giả sử phương thức tương tác này được đặt tên là tên là “ptTuongtac(View view)”  Khai báo thuộc tính onClick cho View trong tập tin Layout như sau: android:onClick=” ptTuongtac”",
-      "C": "Các câu trả lời A và B đều đúng",
-      "D": "Câu trả lời A đúng và câu trả lời B sai"
+      "A": "\tLập trình viên không muốn làm",
+      "B": "\tKhông đủ tài nguyên, vượt quá phạm vi hợp đồng",
+      "C": "\tNgười dùng không biết cách sử dụng hệ thống",
+      "D": "\tHệ thống quản lý cấu hình bị lỗi"
     },
-    "answer": "C"
+    "answer": "B"
   },
   {
     "id": 24,
-    "text": "24. Menu rất hữu ích để hiển thị tùy chọn bổ sung mà không trực tiếp nhìn thấy trên giao diện của một Activity. Trong đó, Context Menu có chức năng và đặt điểm là:",
+    "text": "24. Một hệ thống website thương mại điện tử đang chạy trên máy chủ vật lý (on-premise). Công ty quyết định chuyển toàn bộ hệ thống lên nền tảng đám mây AWS. Hoạt động bảo trì chính nào sẽ được áp dụng và cần chú ý đặc biệt đến bước nào?",
     "choices": {
-      "A": "Hiển thị những thông tin liên quan đến Activity hiện tại. Menu này thường nằm ở góc phải phía trên của giao diện. Để kích hoạt menu này chỉ cần nhấn vào biểu tượng của nó",
-      "B": "Hiển thị những thông tin liên quan đến một đối tượng View cụ thể, để kích hoạt menu này người dùng cần nhấn và giữ đối tượng View mà nó liên kết",
-      "C": "Hiển thị những thông tin liên quan đến một đối tượng View cụ thể, để kích hoạt menu này người dùng chỉ cần nhấn vào đối tượng View mà nó liên kết",
-      "D": "Hiển thị những thông tin liên quan đến ứng dụng. Menu này thường nằm ở góc phải phía trên của giao diện  của tất cả Activity của ứng dụng. Để kích hoạt menu này chỉ cần nhấn vào biểu tượng của nó"
+      "A": "\tBảo trì hiệu chỉnh; Chú ý sửa lỗi nhanh",
+      "B": "\tBảo trì thích ứng; Chú ý lập kế hoạch di dời và vận hành song song",
+      "C": "\tBảo trì hoàn thiện; Chú ý thêm tính năng mới",
+      "D": "\tBảo trì dự phòng; Chú ý refactor code"
     },
     "answer": "B"
   },
   {
     "id": 25,
-    "text": "25. Các bước để thực hiện một Intent ngầm (Implicit Intent) gồm:",
+    "text": "25. Một hệ thống quản lý nhân sự cũ viết bằng COBOL cần phải tương tác với hệ thống mới viết bằng Java thông qua file text. Việc sửa đổi hệ thống COBOL để đọc/ghi đúng định dạng file mới thuộc loại bảo trì nào?",
     "choices": {
-      "A": "Bước 1: Định nghĩa dữ liệu kèm theo dưới dạng Uri; Bước 2: Khai báo một Intent với 1 Action cụ thể và Uri đã định nghĩa; Bước 3: Gọi hàm startActivity() hoặc startActivityForResult () để khởi động Intent",
-      "B": "Bước 1: Khai báo một Intent với 1 Action cụ thể; Bước 2: Gọi hàm startActivity() hoặc startActivityForResult () để khởi động Intent; Bước 3: Khai báo View cần thiết để thể hiện đáp ứng",
-      "C": "Bước 1: Khai báo View cần thiết để thể hiện đáp ứng; Bước 2: Khai báo một Intent với 1 Action cụ thể; Bước 3: Gọi hàm startActivity() hoặc startActivityForResult () để khởi động Intent",
-      "D": "Bước 1: Khai báo một Intent với 1 Action cụ thể; Bước 2: Định nghĩa dữ liệu kèm theo dưới dạng Bundle;  Bước 3: Gọi hàm startActivity() hoặc startActivityForResult () để khởi động Intent"
+      "A": "\tBảo trì hiệu chỉnh (sửa lỗi giao diện",
+      "B": "\tBảo trì thích ứng (thích ứng với môi trường tích hợp mới",
+      "C": "\tBảo trì hoàn thiện (nâng cấp chức năng",
+      "D": "\tBảo trì dự phòng (tối ưu hóa code"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "text": "26. Bốn bước chính trong Mô hình Tái sử dụng (Reuse Model) bao gồm:",
+    "choices": {
+      "A": "\tPhân tích, Thiết kế hệ thống, Cài đặt mã nguồn, Kiểm thử",
+      "B": "\tNhận dạng, Hiểu thành phần, Hiệu chỉnh, Tích hợp",
+      "C": "\tLập kế hoạch, Di dời dữ liệu, Ngưng sử dụng, Lưu trữ",
+      "D": "\tTiếp nhận yêu cầu, Đánh giá rủi ro, Phê chuẩn, Thực hiện"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "text": "27. Trong quản lý cấu hình (SCM), thuật ngữ \"Đường cơ sở\" (Baseline) ám chỉ điều gì?",
+    "choices": {
+      "A": "\tMột phiên bản phần mềm đã được duyệt dùng làm mốc so sánh",
+      "B": "\tDòng mã lệnh đầu tiên được viết trong chương trình",
+      "C": "\tBản kế hoạch ngân sách dự kiến ban đầu của dự án",
+      "D": "\tDanh sách toàn bộ nhân sự tham gia dự án từ đầu"
     },
     "answer": "A"
   },
   {
-    "id": 26,
-    "text": "26. Trong thiết bị di động, bộ nhớ trong và bộ nhớ ngoài được phân biệt như sau:",
-    "choices": {
-      "A": "Bộ nhớ trong là bộ nhớ RAM, bộ nhớ ngoài là bộ nhớ ROM",
-      "B": " Bộ nhớ trong là bộ nhớ được gắn sẵn trong thiết bị, bộ nhớ ngoài là SDCard",
-      "C": "Bộ nhớ trong gồm RAM và bộ nhớ được gắn sẵn trong thiết bị, bộ nhớ ngoài là SDCard",
-      "D": "Bộ nhớ trong chỉ được dùng để lưu dữ liệu riêng của mỗi ứng dụng, bộ nhớ ngoài dùng để lưu dữ liệu dùng chung (thường là SDCard, nhưng cũng có thể là bộ nhớ được gắn sẵn"
-    },
-    "answer": "D"
-  },
-  {
-    "id": 27,
-    "text": "27. Đối tượng Freferences thường dùng để lưu trữ, điều chỉnh và phục hồi nội dung gì?",
-    "choices": {
-      "A": "Tập các tính năng của ứng dụng được người dùng tuỳ chọn",
-      "B": "Các thiết lập của người dùng trong một ứng dụng",
-      "C": "Tập các hoạt động của ứng dụng  được người dùng tuỳ chọn",
-      "D": "Tất cả A, B, C đều đúng"
-    },
-    "answer": "D"
-  },
-  {
     "id": 28,
-    "text": "28. Các đối tượng được dùng để xây dựng thiết lập trong Android gồm:",
+    "text": "28. Đội bảo trì gặp khó khăn do tài liệu không khớp với mã nguồn. Mô hình phù hợp nhất để tránh điều này là:",
     "choices": {
-      "A": "ListboxPreference; ViewPreference; FramePreference",
-      "B": "CheckBoxPreference; ListPreference; EditextPreference",
-      "C": "PreferenceFragment; PreferenceActivity",
-      "D": "Tất cả A, B và C đều sai"
+      "A": "Quick-Fix",
+      "B": "Lặp và Tăng trưởng",
+      "C": "Boehm",
+      "D": "Tái sử dụng"
     },
     "answer": "B"
   },
   {
     "id": 29,
-    "text": "29. Tạo bảng: tên là Lop_CT274, gồm 7 cột: ID, MSSV, Họ_Tên, Email, Diem_KT, Điểm_Thi, Điểm_TH . Hãy viết chuỗi tạo bảng.",
+    "text": "29. Bốn vấn đề then chốt trong bảo trì phần mềm là gì?",
     "choices": {
-      "A": "String CreatetbSchool=\"create table Lop_CT274 (+”id integer primary key autoincrement”,+”MSSV” text, +“Ho_Ten” text, +“Email” text, +“Diem_KT” float, +“Diem_Thi” float, +“Diem_TH” float)\";",
-      "B": "String CreatetbSchool=\"create table Lop_CT274 (\"+\"id integer primary key autoincrement,\"+“MSSV text, \"+“Ho_Ten text, \"+“Email text, \"+“Diem_KT float, \"+“Diem_Thi float, \"+“Diem_TH float)\";",
-      "C": "String CreatetbSchool=\"table Lop_CT274 (\"+\"id integer key autoincrement,\"+“MSSV text, \"+“Ho_Ten text, \"+“Email text, \"+“Diem_KT float, \"+“Diem_Thi float, \"+“Diem_TH float)\";",
-      "D": "Các câu khác với câu này đều sai"
+      "A": "\tKỹ thuật, quản lý, phép đo, ước lượng chi phí",
+      "B": "\tThiết kế, kiểm thử, phân tích, bảo trì",
+      "C": "\tPhát triển, triển khai, vận hành, bảo trì",
+      "D": "\tTài liệu, mã nguồn, kiểm thử, quản lý"
     },
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 30,
-    "text": "30. Để thao tác với cơ sở dữ liệu SQLite trên Android ta sử dụng các đối tượng nào?",
+    "text": "30. Đâu là yếu tố ảnh hưởng đến sự hiểu phần mềm?",
     "choices": {
-      "A": "SQLiteOpenController và SQLiteDatabase",
-      "B": "SQLiteOpenHelper và SQLiteDatabase",
-      "C": "SQLiteData và SQLiteOpenManager",
-      "D": "SQLiteOpenHelper và SQLiteDataContent"
+      "A": "\tKinh nghiệm bảo trì viên, chất lượng tài liệu, công cụ hỗ trợ",
+      "B": "\tNgôn ngữ lập trình, hệ điều hành, phần cứng",
+      "C": "\tQuy mô dự án, ngân sách, thời hạn",
+      "D": "\tSố lượng người dùng, tần suất sử dụng, vị trí địa lý"
     },
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 31,
-    "text": "31. Trong Android có nhiều Content Provider hữu dụng được dựng sẵn như  CallLog, Contacts, MediaStore, Settings. Để truy vấn một Content Provider, chẳng hạn như lấy tất cả các contacts từ một Contacts content provider, chúng ta khai báo URI như sau:",
+    "text": "31. Gia công bảo trì phần mềm thường áp dụng với loại phần mềm nào?",
     "choices": {
-      "A": "contentprovider://contacts/people",
-      "B": "provider://contacts/people",
-      "C": "content://contacts/people",
-      "D": "provider://content/contacts/people"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 32,
-    "text": "32. Để  xóa bảng trong cơ sở dữ liệu SQLite, giả sử có tên là db, ta áp dụng phương thức:",
-    "choices": {
-      "A": "db.deleteDatabase(<tên Bảng>",
-      "B": "db.execSQL(“Chuỗi xóa bảng”",
-      "C": "db.delete(“Tên bảng”",
-      "D": "db.deleteTable(<tên Bảng>"
+      "A": "Phần mềm lõi kinh doanh",
+      "B": "Phần mềm ít quan trọng",
+      "C": "Phần mềm mã nguồn mở",
+      "D": "Phần mềm thử nghiệm"
     },
     "answer": "B"
   },
   {
-    "id": 33,
-    "text": "33. Để tạo ra một đối tượng con trỏ dùng để đọc tin nhắn trong  thư mục inbox ta dùng phương thức nào? Cú pháp?",
+    "id": 32,
+    "text": "32. Ba thực thể chính trong phép đo bảo trì là gì?",
     "choices": {
-      "A": "Dùng phương thức getSmsContent và phương thức query, với cú pháp như sau: Cursor c = getSmsContent().query(SMS_INBOX, null, null, null, null);",
-      "B": "Dùng phương thức getContent và phương thức query, với cú pháp như sau:      Cursor c = getContent().query(SMS_INBOX, null, null, null, null);",
-      "C": "Dùng phương thức getContent và phương thức getquery, với cú pháp như sau:    Cursor c = getContent().getquery(SMS_INBOX, null, null, null, null);",
-      "D": "Dùng phương thức getContentResolver và phương thức query, với cú pháp như sau: Cursor c = getContentResolver().query(SMS_INBOX, null, null, null, null);"
+      "A": "Quy trình, tài nguyên, sản phẩm",
+      "B": "Mã nguồn, tài liệu, nhân sự",
+      "C": "Thời gian, chi phí, chất lượng",
+      "D": "Yêu cầu, thiết kế, kiểm thử"
     },
-    "answer": "D"
+    "answer": "A"
+  },
+  {
+    "id": 33,
+    "text": "33. Công thức tính độ phức tạp McCabe là gì?",
+    "choices": {
+      "A": "v(G) = e – n + 2",
+      "B": "v(G) = n – e + 2",
+      "C": "v(G) = e + n – 2",
+      "D": "v(G) = n + e × 2"
+    },
+    "answer": "A"
   },
   {
     "id": 34,
-    "text": "34. Yêu cầu GET trong giao thức HTTP có đặc điểm gì?",
+    "text": "34. Tính dễ hiểu của phần mềm thường tỉ lệ nghịch với yếu tố nào?",
     "choices": {
-      "A": "Yêu cầu thông tin - dữ liệu được chuyển đi như là một phần của URL, được dùng để lấy dữ liệu từ server và đây là phương thức mặc định",
-      "B": "Yêu cầu thông tin - dữ liệu được chuyển đi trong luồng riêng biệt, dùng để gởi dữ liệu đến server",
-      "C": "Yêu cầu thông tin - dữ liệu được chuyển đi như là một phần của URL, được dùng để gởi dữ liệu đến server và đây là phương thức mặc định",
-      "D": "Yêu cầu thông tin - dữ liệu được chuyển đi với 2 phần riêng biệt gồm URL và dữ liệu trong cùng một luồng, dùng để gởi yêu cầu đến server và nhận dữ liệu từ server"
+      "A": "Độ phức tạp",
+      "B": "Kích thước mã nguồn",
+      "C": "Tuổi phần mềm",
+      "D": "Số người dùng"
     },
     "answer": "A"
   },
   {
     "id": 35,
-    "text": "35. Để có thể thực hiện các cuộc giao tiếp, một trong hai quá trình phải công bố số hiệu cổng của socket mà mình sử dụng. Ngoài số hiệu cổng, hai bên giao tiếp còn phải biết địa chỉ IP của nhau. Cho biết vai trò của số hiệu cổng và địa chỉ IP.",
+    "text": "35. Yếu tố kỹ thuật nào làm giảm chi phí bảo trì?",
     "choices": {
-      "A": "Số hiệu cổng và IP là một cặp để xác định server hoặc client",
-      "B": "Địa chỉ IP giúp phân biệt các thiết bị trên mạng TCP/IP. Trong khi số hiệu cổng dùng để phân biệt các quá trình khác nhau trên cùng một máy tính",
-      "C": "Cổng đề xác định đường truyền, địa chỉ IP để xác định thiết bị trên mạng TCP/IP",
-      "D": "Số hiệu cổng và địa chỉ IP đều bắt buộc khai báo trong mọi trường hợp cho cả client và server"
+      "A": "Tài liệu chất lượng cao",
+      "B": "Mã nguồn phức tạp",
+      "C": "Ngôn ngữ cấp thấp",
+      "D": "Module phụ thuộc nhiều"
     },
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 36,
-    "text": "36. Hoạt động mạng là yêu cầu cơ bản và đã được thiết kế sẵn cho hầu hết các thiết bị di động. Như vậy, trong trường hợp nào người lập trình phát triển ứng dụng di động cần phải lập trình kết nối mạng cho thiết bị di động?",
+    "text": "36. Các loại điểm chức năng chính gồm những gì?",
     "choices": {
-      "A": "Khi xây dựng một ứng dụng có các chức năng cần phải kết nối mạng, người phát triển phần mềm cần lập trình mạng cho ứng dụng của mình",
-      "B": "Nguyên tắc chung cho các ứng dụng di động là phải có kết nối mạng, nên người lập trình phát triển ứng dụng di động luôn luôn phải thực hiện nội dung này trong các ứng dụng của mình",
-      "C": "Vì các hoạt động mạng đã được thiết kế sẵn trên tất cả các thiết bị di động, nên người lập trình ứng dụng di động không cần lập trình kết nối mạng",
-      "D": "Người lập trình phát triển ứng dụng di động luôn luôn phải thực hiện nội dung này trong khi lập trình, nhằm mục đích liên kết lấy tài nguyên trên mạng và chạy thử ứng dụng trong thời gian lập trình"
+      "A": "EI, EO, EQ, ILF, EIF",
+      "B": "LOC, FP, CPLX, QUAL",
+      "C": "UI, UX, DB, API",
+      "D": "Dev, Test, Ops, Maint"
     },
     "answer": "A"
   },
   {
     "id": 37,
-    "text": "37. Các bước lập trình để kiểm tra tình trạng kết nối mạng:",
+    "text": "37. Phân tích tác động dựa vào mã lệnh có nhược điểm gì?",
     "choices": {
-      "A": "Bước 1. Tạo ra đối tượng quản lý kết nối với lớp ConnectivityActive với câu lệnh      ConnectivitySystem qlkn = (ConnectivitySyctem)getSystem(Context.CONNECTIVITY_NETWOR;",
-      "B": "Bước 1. Tạo ra đối tượng quản lý kết nối với lớp ConnectivityActive với câu lệnh      ConnectivityNetwork qlkn = (ConnectivityNetwork)getService(Context.CONNECTIVITY_NETWOR;",
-      "C": "Bước 1. Tạo ra đối tượng quản lý kết nối với lớp ConnectivityActive với câu lệnh      ConnectivityActive qlkn = (ConnectivityActive)getSystemService(Context.CONNECTIVITY_NETWOR;",
-      "D": "Tất cả A, B và C đều sai"
+      "A": "\tTốn thời gian, cần chi tiết thực thi, phạm vi giới hạn",
+      "B": "\tKhông chính xác, khó áp dụng, không hỗ trợ UML",
+      "C": "\tChỉ dùng được cho ngôn ngữ C, không hỗ trợ OOP",
+      "D": "\tYêu cầu tài liệu đầy đủ, không cần mã nguồn"
     },
-    "answer": "C"
+    "answer": "A"
   },
   {
     "id": 38,
-    "text": "38. Lớp nào được sử dụng để mở 1 kết nối http với URL từ xa? Cú pháp?",
+    "text": "38. Phép đo LOC bị hạn chế vì:",
     "choices": {
-      "A": "Có thể dùng lớp HttpConnection và hàm getConnection(), cú pháp:",
-      "B": "Có thể dùng lớp URLConnection và hàm openConnection(), cú pháp:",
-      "C": "Có thể dùng lớp ConnectionUrl và hàm urlConnection(), cú pháp:",
-      "D": "Tất cả A, B và C đều sai"
+      "A": "\tKhông có chuẩn chung, phụ thuộc ngôn ngữ, không phản ánh chất lượng",
+      "B": "\tKhó đếm chính xác, không áp dụng được cho mã nguồn đóng",
+      "C": "\tChỉ đo được mã nguồn, không đo được tài liệu",
+      "D": "\tTốn nhiều thời gian tính toán, khó tự động hóa"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 39,
+    "text": "39. Độ phức tạp McCabe cao (>10) cho thấy điều gì?",
+    "choices": {
+      "A": "\tChương trình khó hiểu và khó bảo trì, cần xem xét tái cấu trúc",
+      "B": "\tChương trình có nhiều chức năng, cần thêm nhân sự",
+      "C": "\tChương trình chạy chậm, cần tối ưu hiệu năng",
+      "D": "\tChương trình dễ kiểm thử, ít lỗi tiềm ẩn"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 40,
+    "text": "40. Một phần mềm có 3 EI đơn giản, 2 EO trung bình, 1 ILF phức tạp. Điểm chức năng thô (UFP) là bao nhiêu? (Tra bảng trọng số: EI đơn giản=3, EO trung bình=5, ILF phức tạp=15)",
+    "choices": {
+      "A": "34",
+      "B": "40",
+      "C": "45",
+      "D": "50"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 41,
+    "text": "41. Khi ước lượng chi phí bảo trì bằng FP, nếu tổng hệ số kỹ thuật (∑Fᵢ) = 45, điểm chức năng điều chỉnh (AFP) được tính bằng công thức nào?",
+    "choices": {
+      "A": "AFP = UFP × (0.65 + 0.01 × 45",
+      "B": "AFP = UFP × (0.65 + 45",
+      "C": "AFP = UFP × 45",
+      "D": "AFP = UFP / (0.65 + 0.01 × 45"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 42,
+    "text": "42. Ý nghĩa của \"dòng mã lệnh delta\" trong đo lường kích thước bảo trì là gì?",
+    "choices": {
+      "A": "\tLà tổng số dòng lệnh của chương trình sau khi bảo trì xong",
+      "B": "\tLà số dòng lệnh được thêm vào hoặc được hiệu chỉnh trong quá trình bảo trì",
+      "C": "\tLà số dòng lệnh bị xóa bỏ khỏi chương trình gốc ban đầu",
+      "D": "\tLà số dòng lệnh chú thích được viết thêm để giải thích code"
     },
     "answer": "B"
   },
   {
-    "id": 39,
-    "text": "39. Cấu trúc ngôn ngữ JSON?",
+    "id": 43,
+    "text": "43. Dự án có 100 điểm chức năng (FP). Sử dụng ngôn ngữ Java (trung bình 55 LOC/FP). Hãy ước lượng kích thước phần mềm theo dòng lệnh (LOC)?",
     "choices": {
-      "A": "Thông điệp JSON được chia thành các đối tượng (JSONObject).  Mỗi đối tượng được bắt đầu và kết thúc bằng một cặp ngoặc quăn ({ }). Các thông tin trong một dãy hay đối tượng bao gồm tập hợp các cặp khóa/giá trị (Key/Value",
-      "B": "Thông điệp JSON được chia thành các dãy (JSONArray).  Mỗi dãy được bắt đầu và kết thúc bởi cặp ngoặc vuông ([ ]). Các thông tin trong một dãy hay đối tượng bao gồm tập hợp các cặp khóa/giá trị (Key/Value",
-      "C": "Thông điệp JSON là các đối tượng (JObject). Trong mỗi đối tượng có các dãy (JArray) và các thông tin riêng lẻ.  Mỗi đối tượng được bắt đầu và kết thúc bằng một cặp ngoặc quăn ({ }) và mỗi dãy được bắt đầu và kết thúc bởi cặp ngoặc vuông ([ ]). Các thông tin trong một dãy hay đối tượng bao gồm tập hợp các cặp tên/giá trị (Name/Value",
-      "D": "Thông điệp JSON được chia thành các dãy (JSONArray) và đối tượng (JSONObject).  Mỗi dãy được bắt đầu và kết thúc bởi cặp ngoặc vuông ([ ]) và mỗi đối tượng được bắt đầu và kết thúc bằng một cặp ngoặc quăn ({ }). Các thông tin trong một dãy hay đối tượng bao gồm tập hợp các cặp khóa/giá trị (Key/Value"
+      "A": "550 LOC",
+      "B": "5500 LOC",
+      "C": "55000 LOC",
+      "D": "1000 LOC"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 44,
+    "text": "44. Loại bảo trì nào tập trung vào việc sửa các lỗi (defects) trong phần mềm?",
+    "choices": {
+      "A": "Bảo trì thích ứng",
+      "B": "Bảo trì hoàn thiện",
+      "C": "Bảo trì hiệu chỉnh",
+      "D": "Bảo trì dự phòng"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 45,
+    "text": "45. Theo nghiên cứu được trích dẫn, chi phí bảo trì phần mềm chiếm khoảng bao nhiêu phần trăm tổng chi phí vòng đời?",
+    "choices": {
+      "A": "10-20%",
+      "B": "25-35%",
+      "C": "49-75%",
+      "D": "80-90%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 46,
+    "text": "46. \"Hiệu ứng gợn sóng\" (Ripple Effect) trong bảo trì phần mềm là gì?",
+    "choices": {
+      "A": "\tChi phí bảo trì tăng theo cấp số nhân",
+      "B": "\tẢnh hưởng của một thay đổi ở nơi này lên các phần khác của hệ thống",
+      "C": "\tHiệu quả tăng dần theo thời gian khi hệ thống được tối ưu",
+      "D": "\tSự lan truyền lỗi từ người dùng này sang người dùng khác"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "text": "47. Trong so sánh với phát triển mới, bảo trì phần mềm đòi hỏi tư duy nào?",
+    "choices": {
+      "A": "Chỉ \"nhìn lại\" (look back",
+      "B": "Chỉ \"nhìn tới\" (look ahead",
+      "C": "Vừa \"nhìn lại\" vừa \"nhìn tới\"",
+      "D": "Tập trung hoàn toàn vào công nghệ mới"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 48,
+    "text": "48. Việc \"vá lỗi\" (patching) khẩn cấp thường dẫn đến hậu quả gì?",
+    "choices": {
+      "A": "\tLàm giảm vĩnh viễn độ phức tạp của chương trình",
+      "B": "\tCó thể làm tăng độ phức tạp và gây ra các hiệu ứng gợn sóng không lường trước",
+      "C": "\tGiúp hệ thống chạy nhanh hơn gấp đôi",
+      "D": "\tLoại bỏ hoàn toàn nhu cầu bảo trì trong tương lai"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 49,
+    "text": "49. Theo McDermid, thành phần của phần mềm bao gồm những gì?",
+    "choices": {
+      "A": "\tChỉ mã nguồn (source code",
+      "B": "\tMã nguồn và mã đối tượng",
+      "C": "\tMã nguồn, mã đối tượng, tài liệu và các thủ tục vận hành",
+      "D": "\tChương trình và cơ sở dữ liệu"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 50,
+    "text": "50. Trong khung làm việc của bảo trì phần mềm, \"Môi trường tổ chức\" bao gồm yếu tố nào?",
+    "choices": {
+      "A": "\tHệ điều hành và trình biên dịch",
+      "B": "\tPhần cứng máy tính",
+      "C": "\tCác quy tắc nghiệp vụ và chính sách của chính phủ",
+      "D": "\tCác công cụ kiểm thử tự động"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 51,
+    "text": "51. Lý do sâu xa nào khiến \"sức ì của người sử dụng\" trở thành một yếu tố cản trở thay đổi phần mềm?",
+    "choices": {
+      "A": "\tNgười dùng không biết sử dụng máy tính",
+      "B": "\tNgười dùng sợ thay đổi vì đã quen với hệ thống cũ",
+      "C": "\tNgười dùng luôn đòi hỏi thay đổi quá nhiều",
+      "D": "\tNgười dùng là các lập trình viên"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "text": "52. Một lập trình viên nhận thấy đoạn mã xử lý chuỗi trong hệ thống quá rối rắm và khó hiểu, mặc dù nó vẫn chạy đúng. Anh ta quyết định viết lại đoạn mã đó cho sạch sẽ và dễ đọc hơn (Refactoring). Đây là loại bảo trì gì?",
+    "choices": {
+      "A": "Bảo trì hiệu chỉnh",
+      "B": "Bảo trì hoàn thiện",
+      "C": "Bảo trì dự phòng",
+      "D": "Bảo trì thích ứng"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 53,
+    "text": "53. Trọng tâm chính của mô hình Boehm (1983) là gì?",
+    "choices": {
+      "A": "Tự động hóa kiểm thử",
+      "B": "Phân tích kinh tế và quyết định quản lý",
+      "C": "Tái sử dụng thành phần phần mềm",
+      "D": "Cập nhật tài liệu liên tục"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 54,
+    "text": "54. Yếu tố cốt lõi của Mô hình Tái sử dụng (Reuse Model) là gì?",
+    "choices": {
+      "A": "\tHợp đồng bảo trì chi tiết",
+      "B": "\tKho chứa (repository) các thành phần và tài liệu",
+      "C": "\tQuy trình kiểm thử tự động",
+      "D": "\tĐội ngũ Help Desk chuyên nghiệp"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "text": "55. Giai đoạn \"Phân tích\" trong mô hình IEEE 1219 KHÔNG bao gồm việc gì?",
+    "choices": {
+      "A": "\tNghiên cứu phạm vi và tính khả thi của thay đổi",
+      "B": "\tLập kế hoạch sơ bộ cho thiết kế, cài đặt, kiểm thử",
+      "C": "\tTrực tiếp lập trình sửa lỗi",
+      "D": "\tPhân tích chi phí và lợi ích"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 56,
+    "text": "56. Thành phần nào thường KHÔNG có trong Ban Kiểm soát Cấu hình (CCB)?",
+    "choices": {
+      "A": "Đại diện khách hàng",
+      "B": "Đại diện tổ chức bảo trì",
+      "C": "Lập trình viên thực thi chính",
+      "D": "Đại diện người dùng cuối"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 57,
+    "text": "57. Công việc \"Thẩm tra\" (Verification) trong hoạt động \"Phân tích vấn đề và sự thay đổi\" nhằm mục đích gì?",
+    "choices": {
+      "A": "\tLập kế hoạch dự án chi tiết",
+      "B": "\tXác nhận rằng vấn đề được báo cáo là có thật và có thể tái hiện",
+      "C": "\tPhê duyệt ngân sách cho thay đổi",
+      "D": "\tViết tài liệu hướng dẫn sử dụng mới"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 58,
+    "text": "58. Việc định nghĩa rõ ràng các thuật ngữ như \"lỗi nghiêm trọng\" hay \"thời gian phản hồi\" trong hợp đồng nhằm mục đích gì?",
+    "choices": {
+      "A": "\tLàm cho hợp đồng trông chuyên nghiệp hơn",
+      "B": "\tTránh hiểu lầm và tranh chấp về nghĩa vụ và trách nhiệm giữa các bên",
+      "C": "\tGiới hạn quyền lợi của khách hàng",
+      "D": "\tKéo dài thời gian thực hiện dịch vụ"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 59,
+    "text": "59. Theo ISO/IEC/IEEE 14764, việc \"Lập các thủ tục cho yêu cầu thay đổi\" thuộc về hoạt động nào?",
+    "choices": {
+      "A": "Phân tích vấn đề và sự thay đổi",
+      "B": "Thực thi sự thay đổi",
+      "C": "Thực thi quy trình",
+      "D": "Di dời"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 60,
+    "text": "60. Sự khác biệt cốt lõi giữa \"Thực thi sự thay đổi\" trong bảo trì và \"Phát triển mới\" là gì?",
+    "choices": {
+      "A": "\tBảo trì không cần phân tích hoặc thiết kế",
+      "B": "\tBảo trì phải làm việc trong các ràng buộc của hệ thống hiện có",
+      "C": "\tPhát triển mới không cần kiểm thử",
+      "D": "\tBảo trì luôn sử dụng ngôn ngữ lập trình khác"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "text": "61. Theo mô hình Osborne, nguyên nhân chính dẫn đến các vấn đề kỹ thuật trong bảo trì là gì?",
+    "choices": {
+      "A": "\tDo mã nguồn được viết quá phức tạp và khó hiểu",
+      "B": "\tDo sự kiểm soát và giao tiếp quản lý không đầy đủ",
+      "C": "\tDo công nghệ phát triển quá nhanh làm phần mềm lạc hậu",
+      "D": "\tDo người dùng cuối thiếu kỹ năng sử dụng máy tính"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 62,
+    "text": "62. Tính có thể bảo trì bị ảnh hưởng nhiều nhất ở giai đoạn nào?",
+    "choices": {
+      "A": "Vận hành",
+      "B": "Kiểm thử",
+      "C": "Phát triển",
+      "D": "Triển khai"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 63,
+    "text": "63. Halstead đo độ phức tạp dựa trên yếu tố nào?",
+    "choices": {
+      "A": "Số lượng toán tử và toán hạng",
+      "B": "Số dòng mã và chú thích",
+      "C": "Số module và hàm",
+      "D": "Số biến và hằng số"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 64,
+    "text": "64. Yếu tố phi kỹ thuật nào ảnh hưởng đến chi phí bảo trì?",
+    "choices": {
+      "A": "Tuổi phần mềm",
+      "B": "Màu sắc giao diện",
+      "C": "Tên công ty",
+      "D": "Ngôn ngữ lập trình"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 65,
+    "text": "65. Tính có thể bảo trì thường bị xem nhẹ trong phát triển vì:",
+    "choices": {
+      "A": "\tÁp lực thời gian, ngân sách và tập trung vào chức năng chính",
+      "B": "\tNhà phát triển không biết cách viết mã dễ bảo trì",
+      "C": "\tNgười dùng không yêu cầu tính bảo trì",
+      "D": "\tCông cụ hỗ trợ bảo trì còn hạn chế"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 66,
+    "text": "66. Mô hình điểm chức năng trong bảo trì chỉ tính cho những hoạt động nào?",
+    "choices": {
+      "A": "Thêm mới và chỉnh sửa chức năng",
+      "B": "Xóa chức năng và tối ưu mã",
+      "C": "Kiểm thử và triển khai",
+      "D": "Đào tạo và hỗ trợ người dùng"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 67,
+    "text": "67. Bạn là quản lý, nhân viên báo cáo rằng thời gian thực hiện thay đổi thực tế là 15 ngày, trong khi kế hoạch là 10 ngày. Hãy tính chất lượng quy trình theo tiêu chí \"Kế hoạch\"?",
+    "choices": {
+      "A": "+50%",
+      "B": "-50%",
+      "C": "+33%",
+      "D": "-33%"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 68,
+    "text": "68. Việc lựa chọn nhóm bảo trì thường dựa trên yếu tố nào?",
+    "choices": {
+      "A": "Sở thích cá nhân của quản lý",
+      "B": "Đặc điểm cụ thể của từng trường hợp",
+      "C": "Quy mô công ty",
+      "D": "Ngôn ngữ lập trình sử dụng"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 69,
+    "text": "69. Trong phân bố công sức bảo trì, loại nào chiếm tỷ lệ CAO NHẤT theo nghiên cứu của Lientz và Swanson?",
+    "choices": {
+      "A": "Bảo trì hiệu chỉnh",
+      "B": "Bảo trì thích ứng",
+      "C": "Bảo trì hoàn thiện",
+      "D": "Bảo trì dự phòng"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 70,
+    "text": "71. Trong khung làm việc, yếu tố nào trực tiếp tạo ra nhu cầu thay đổi đối với sản phẩm phần mềm?",
+    "choices": {
+      "A": "Nhân sự bảo trì",
+      "B": "Yêu cầu của người dùng",
+      "C": "Màu sắc của giao diện sản phẩm",
+      "D": "Tốc độ của sản phẩm"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "text": "76. Yếu tố môi trường nào dưới đây thuộc \"Môi trường điều hành\" (Operating Environment)?",
+    "choices": {
+      "A": "Quy định của chính phủ",
+      "B": "Quy tắc nghiệp vụ",
+      "C": "Áp lực cạnh tranh thị trường",
+      "D": "Hệ điều hành, trình biên dịch"
     },
     "answer": "D"
   },
   {
-    "id": 40,
-    "text": "40. Để lập trình phát triển ứng dụng trên nền tảng gốc iOS, người lập trình gặp khó khăn gì?",
+    "id": 72,
+    "text": "77. Chi phí sửa lỗi (fixing bugs) cao nhất ở giai đoạn nào trong chu kỳ sống phần mềm?",
     "choices": {
-      "A": "Ngôn ngữ lập trình được đánh giá là phức tạp",
-      "B": "Tốn chi phí để đăng tuyển vào chương trình người phát triển iOS (tải SDK, cài đặt môi trường phát triển, kiểm thử trên thiết bị thật, đưa lên App Store",
-      "C": "Môi trường phát triển ứng dụng iOS chỉ có thể cài đặt trên máy tính chạy hệ điều hành Mac OS, (Macintosh, Hackintosh), version 10.6.8 trở lên",
-      "D": "Tất cả A, B và C đều đúng"
+      "A": "Phân tích và đặc tả yêu cầu",
+      "B": "Thiết kế",
+      "C": "Lập trình",
+      "D": "Vận hành và bảo trì"
     },
     "answer": "D"
+  },
+  {
+    "id": 73,
+    "text": "79. Bảo trì hoàn thiện thường bao gồm các hoạt động nào?",
+    "choices": {
+      "A": "\tSửa lỗi logic trong code",
+      "B": "\tChuyển đổi sang hệ điều hành mới",
+      "C": "\tCải tiến chức năng hiện có hoặc thêm chức năng mới",
+      "D": "\tViết lại chú thích cho code dễ hiểu hơn"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 74,
+    "text": "83. Hãy chọn phát biểu SAI về bảo trì phần mềm?",
+    "choices": {
+      "A": "\tBảo trì chỉ là hoạt động sửa lỗi (bug fĩing",
+      "B": "\tBảo trì là quá trình quản lý sự tiến hóa của phần mềm",
+      "C": "\tBảo trì bao gồm cả hoạt động trước và sau khi phát hành sản phẩm",
+      "D": "\tChi phí cho việc hiểu hệ thống chiếm phần lớn công sức bảo trì"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 75,
+    "text": "84. Việc \"vận hành song song\" (parallel operation) thường gắn liền với hoạt động nào nhất?",
+    "choices": {
+      "A": "Hiệu chỉnh nhanh",
+      "B": "Phân tích tác động",
+      "C": "Di dời hệ thống",
+      "D": "Chỉnh sửa code"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 76,
+    "text": "89. Dựa trên Luật của Lehman, khi phần mềm được sửa đổi nhiều lần, điều gì có xu hướng xảy ra?",
+    "choices": {
+      "A": "\tKích thước và độ phức tạp có xu hướng giảm",
+      "B": "\tKích thước và độ phức tạp có xu hướng tăng lên",
+      "C": "\tTốc độ xử lý tăng gấp đôi",
+      "D": "\tTốc độ xử lý giảm một nửa"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 77,
+    "text": "96. Dự án có 80 điểm chức năng (FP). Sử dụng ngôn ngữ Visual Basic (trung bình 40 LOC/FP). Hãy ước lượng kích thước phần mềm theo dòng lệnh (LOC)?",
+    "choices": {
+      "A": "320 LOC",
+      "B": "3200 LOC",
+      "C": "80 LOC",
+      "D": "1000 LOC"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 78,
+    "text": "97. Trong bảo trì phần mềm, hoạt động \"Ngưng sử dụng\" nhằm quản lý vấn đề gì?",
+    "choices": {
+      "A": "\tTạm dừng phần mềm trong vài giờ để bảo trì định kỳ",
+      "B": "\tQuản lý việc đưa phần mềm đến cuối vòng đời",
+      "C": "\tChuyển phần mềm sang một máy chủ vật lý mới",
+      "D": "\tViết lại phần mềm bằng một ngôn ngữ mới"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "text": "98. Help Desk phát hiện khách hàng không in được là do chưa bật nguồn máy in. Hành động giải quyết ngay tại chỗ này thể hiện vai trò gì?",
+    "choices": {
+      "A": "\tVai trò sửa lỗi phần mềm cơ bản",
+      "B": "\tVai trò đào tạo người dùng sử dụng phần cứng",
+      "C": "\tVai trò lọc vấn đề, giảm tải các lỗi không phải phần mềm",
+      "D": "\tVai trò phân tích tác động lỗi"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 80,
+    "text": "99. Hoạt động nào xảy ra khi hệ thống được chuyển từ môi trường vận hành cũ sang môi trường mới?",
+    "choices": {
+      "A": "Ngưng sử dụng (Retirement",
+      "B": "Di dời (Migration",
+      "C": "Thực thi sự thay đổi (Modification",
+      "D": "Phân tích vấn đề (Problem Analysis"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 81,
+    "text": "101. Chất lượng quy trình bảo trì có thể đo qua chỉ số nào?",
+    "choices": {
+      "A": "\tMức độ đúng hạn (kế hoạch) và năng suất (số dòng mã/effort",
+      "B": "\tSố lượng nhân viên tham gia và thời gian làm việc",
+      "C": "\tSố lỗi phát hiện trong kiểm thử và số yêu cầu thay đổi",
+      "D": "\tChi phí đầu tư công cụ và đào tạo nhân sự"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 82,
+    "text": "102. Khi sửa đổi module tính lãi suất ngân hàng, để đảm bảo không sai sót với dữ liệu cũ, bạn cần ưu tiên loại kiểm thử nào?",
+    "choices": {
+      "A": "Kiểm thử đơn vị cho hàm mới viết",
+      "B": "Kiểm thử hồi quy trên toàn bộ hệ thống",
+      "C": "Kiểm thử giao diện người dùng",
+      "D": "Kiểm tra lại tài liệu thiết kế"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "text": "103. Hoạt động \"quản lý cấu hình\" hỗ trợ bảo trì hiệu quả vì:",
+    "choices": {
+      "A": "\tGiúp đồng bộ phiên bản và giảm nhầm lẫn thay đổi",
+      "B": "\tGiúp tạo giao diện quản lý phiên bản trực quan",
+      "C": "\tGiúp tự động hóa việc cập nhật cấu trúc mã nguồn",
+      "D": "\tGiúp quản lý tài liệu khách hàng theo phân loại"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 84,
+    "text": "106. Tại sao kho chứa trong mô hình Tái sử dụng lại quan trọng?",
+    "choices": {
+      "A": "\tVì lưu trữ dữ liệu người dùng phục vụ thống kê",
+      "B": "\tVì lưu trữ thành phần giúp tiết kiệm thời gian bảo trì",
+      "C": "\tVì lưu trữ lịch sử kiểm thử phục vụ xác minh",
+      "D": "\tVì lưu trữ mã code nhằm bảo vệ bản quyền"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 85,
+    "text": "109. Yêu cầu \"thêm một tính năng báo cáo mới\" sẽ được phân loại là loại thay đổi gì?",
+    "choices": {
+      "A": "Thay đổi hiệu chỉnh",
+      "B": "Thay đổi thích ứng",
+      "C": "Thay đổi hoàn thiện",
+      "D": "Thay đổi dự phòng"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 86,
+    "text": "111. Phép đo nào được dùng để đánh giá \"tính dễ hiểu\" (Understandability) của phần mềm một cách gián tiếp?",
+    "choices": {
+      "A": "Số lượng người dùng hệ thống",
+      "B": "Độ phức tạp (McCabe/Halstead",
+      "C": "Thời gian phản hồi của hệ thống",
+      "D": "Dung lượng bộ nhớ sử dụng"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 87,
+    "text": "112. Trong hoạt động bảo trì phần mềm, một thay đổi nhỏ gây lỗi lan sang nhiều module. Giai đoạn nào xử lý tốt nhất vấn đề này?",
+    "choices": {
+      "A": "Giai đoạn Kiểm thử chấp nhận",
+      "B": "Giai đoạn Phân tích tác động",
+      "C": "Giai đoạn Chuyển tiếp",
+      "D": "Giai đoạn Lập kế hoạch bảo trì"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 88,
+    "text": "116. Thách thức lớn nhất trong hoạt động Chuyển tiếp giữa đội phát triển và đội bảo trì là gì?",
+    "choices": {
+      "A": "\tViệc bàn giao các thiết bị phần cứng đắt tiền",
+      "B": "\tViệc chuyển giao toàn bộ mã nguồn của dự án",
+      "C": "\tViệc chuyển giao kinh nghiệm và tri thức ngầm về hệ thống",
+      "D": "\tViệc bàn giao các tài liệu in ấn bằng giấy"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 89,
+    "text": "120. Chất lượng sản phẩm trong bảo trì thường được đánh giá qua chỉ số nào?",
+    "choices": {
+      "A": "Số yêu cầu thay đổi từ người dùng",
+      "B": "Số dòng mã được thêm vào",
+      "C": "Thời gian phản hồi",
+      "D": "Số nhân viên tham gia bảo trì"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 90,
+    "text": "123. Một phần mềm có 4 EI trung bình, 2 EQ phức tạp, 2 EIF đơn giản. Điểm chức năng thô (UFP) là bao nhiêu? (Tra bảng trọng số: EI trung bình=4, EQ phức tạp=6, EIF đơn giản=5)",
+    "choices": {
+      "A": "34",
+      "B": "38",
+      "C": "45",
+      "D": "50"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 91,
+    "text": "124. Khi ước lượng chi phí bảo trì bằng FP, nếu tổng hệ số kỹ thuật (∑Fᵢ) = 15, điểm chức năng điều chỉnh (AFP) được tính bằng công thức nào?",
+    "choices": {
+      "A": "AFP = UFP × (0.65 + 0.01 × 15",
+      "B": "AFP = UFP × (0.65 + 15",
+      "C": "AFP = UFP × 15",
+      "D": "AFP = UFP / (0.65 + 0.01 × 15"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 92,
+    "text": "126. Theo chuẩn IEEE, tính có thể bảo trì (Maintainability) là sự dễ dàng trong việc thực hiện các hoạt động nào?",
+    "choices": {
+      "A": "\tPhân tích, thiết kế, cài đặt và kiểm thử phần mềm",
+      "B": "\tDuy trì, cải tiến, thích ứng hay hiệu chỉnh phần mềm",
+      "C": "\tVận hành, quản lý, sao lưu và phục hồi dữ liệu",
+      "D": "\tLập kế hoạch, ước lượng, đo lường và kiểm soát"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 93,
+    "text": "129. Loại bảo trì nào nhằm mục đích ngăn ngừa lỗi có thể xảy ra trong tương lai hoặc cải thiện tính dễ bảo trì?",
+    "choices": {
+      "A": "Bảo trì hiệu chỉnh",
+      "B": "Bảo trì thích ứng",
+      "C": "Bảo trì hoàn thiện",
+      "D": "Bảo trì dự phòng"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 94,
+    "text": "133. \"Lỗ hổng thông tin\" (Information Gap) trong quy trình bảo trì đề cập đến điều gì?",
+    "choices": {
+      "A": "\tKhoảng cách giữa khả năng diễn đạt của người dùng và khả năng hiểu của phân tích viên",
+      "B": "\tKhoảng trống bảo mật trong mã nguồn",
+      "C": "\tSự thiếu hụt tài liệu kỹ thuật",
+      "D": "\tKhoảng cách giữa các phiên bản phần mềm"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 95,
+    "text": "141. Hợp đồng bảo trì thường trở nên bắt buộc trong trường hợp nào?",
+    "choices": {
+      "A": "Khi phần mềm được phát triển nội bộ",
+      "B": "Khi dịch vụ bảo trì được thuê ngoài",
+      "C": "Khi phần mềm có trên 100 người dùng",
+      "D": "Khi phần mềm chạy trên hệ điều hành cũ"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 96,
+    "text": "144. Khi thực hiện thay đổi thêm chức năng \"Xác thực 2 bước (2FA)\", bảo trì viên cần cập nhật mã nguồn, cơ sở dữ liệu, tài liệu thiết kế và thực hiện kiểm thử. Điều này minh họa rõ nhất cho nguyên tắc nào của Quản lý Cấu hình Phần mềm (SCM)?",
+    "choices": {
+      "A": "Quản lý phiên bản riêng biệt",
+      "B": "Kiểm soát sự thay đổi một cách toàn diện",
+      "C": "Tự động hóa qu trình kiểm thử",
+      "D": "Phân quyền truy cập nghiêm ngặt"
+    },
+    "answer": "B"
   }
 ];
