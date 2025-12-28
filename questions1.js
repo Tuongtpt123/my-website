@@ -1054,5 +1054,335 @@ const questions = [
       "D": "Phân quyền truy cập nghiêm ngặt"
     },
     "answer": "B"
+  },
+  {
+    "id": 97,
+    "text": "441. Kỹ thuật Đảo ngược (Reverse Engineering) là gì?",
+    "choices": {
+      "A": "\tLà quy trình xây dựng một hệ thống mới từ các yêu cầu đặc tả ban đầu",
+      "B": "\tLà quy trình phân tích hệ thống để xác định các thành phần và mối quan hệ của nó, tạo ra biểu diễn ở dạng hoặc mức trừu tượng khác",
+      "C": "\tLà quy trình kiểm thử tự động để phát hiện lỗi và sửa lỗi trong mã nguồn",
+      "D": "\tLà quy trình tối ưu hóa cấu trúc mã nguồn mà không thay đổi hành vi bên ngoài"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 98,
+    "text": "442. Kỹ thuật Tái kiến tạo (Reengineering) khác với kỹ thuật Đảo ngược ở điểm nào?",
+    "choices": {
+      "A": "\tTái kiến tạo chỉ thay đổi giao diện người dùng, còn Đảo ngược thay đổi kiến trúc bên trong",
+      "B": "\tTái kiến tạo kiểm tra và sửa đổi hệ thống để tái thiết nó ở dạng mới, còn Đảo ngược chỉ giúp hiểu hệ thống",
+      "C": "\tTái kiến tạo tập trung vào phục hồi tài liệu, còn Đảo ngược tập trung vào tái cấu trúc mã nguồn",
+      "D": "\tTái kiến tạo là bước đầu tiên bắt buộc trước khi thực hiện Đảo ngược"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 99,
+    "text": "443. Công việc nào sau đây KHÔNG thuộc ba hoạt động chính trong mô hình hiểu chương trình?",
+    "choices": {
+      "A": "\tĐọc tài liệu chương trình",
+      "B": "\tChạy chương trình",
+      "C": "\tViết tài liệu thiết kế",
+      "D": "\tĐọc mã nguồn"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 100,
+    "text": "444. Nhân sự nào cần hiểu chi tiết mức thấp (câu lệnh, hàm) để dự đoán hiệu ứng dây chuyền khi thay đổi?",
+    "choices": {
+      "A": "\tNgười quản lý",
+      "B": "\tPhân tích viên",
+      "C": "\tLập trình viên",
+      "D": "\tThiết kế viên"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 101,
+    "text": "445. Mục đích cuối cùng của việc hiểu chương trình trong bảo trì phần mềm là gì?",
+    "choices": {
+      "A": "\tĐể phát hiện và sửa chữa mọi lỗi tiềm ẩn trong hệ thống",
+      "B": "\tĐể thực hiện thành công các yêu cầu thay đổi đối với phần mềm",
+      "C": "\tĐể tạo ra tài liệu kỹ thuật mới và chính xác cho hệ thống",
+      "D": "\tĐể tối ưu hóa hiệu suất và tốc độ thực thi của chương trình"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 102,
+    "text": "446. Kỹ thuật đảo ngược ở mức \"Thực thi\" thường được gọi là gì?",
+    "choices": {
+      "A": "\tPhục hồi thiết kế",
+      "B": "\tPhục hồi đặc tả",
+      "C": "\tDẫn chứng lại tài liệu",
+      "D": "\tTái cấu trúc"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 103,
+    "text": "447. Phương pháp nào sau đây là một cách tiếp cận để chuyển đổi chương trình trong tái kiến tạo CSDL?",
+    "choices": {
+      "A": "\tDịch ngược",
+      "B": "\tViết lại",
+      "C": "\tMã hóa lại",
+      "D": "\tĐóng gói"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 104,
+    "text": "448. Lý do nào thường KHÔNG phải là điều kiện để xem xét sử dụng kỹ thuật Đảo ngược?",
+    "choices": {
+      "A": "\tTài liệu bị mất, không chính xác hoặc lạc hậu",
+      "B": "\tĐộ phức tạp của chương trình tăng lên",
+      "C": "\tCần thêm chi phí và nhân sự mới cho dự án",
+      "D": "\tCần chuyển chương trình sang ngôn ngữ/nền tảng khác"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 105,
+    "text": "449. Mục tiêu của Tái kiến tạo Giao diện người dùng là gì?",
+    "choices": {
+      "A": "\tThay đổi hoàn toàn logic nghiệp vụ của ứng dụng",
+      "B": "\tTái tạo giao diện cũ (ví dụ dựa ký tự) sang giao diện hiện đại (ví dụ đồ họa",
+      "C": "\tTăng tốc độ xử lý của các tác vụ nhập liệu",
+      "D": "\tGiảm dung lượng lưu trữ của ứng dụng"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 106,
+    "text": "4410. Nhân sự nào cần kiến thức về kích thước chương trình (KLOC, FP) để ra quyết định kinh tế?",
+    "choices": {
+      "A": "\tLập trình viên",
+      "B": "\tPhân tích viên",
+      "C": "\tNgười quản lý",
+      "D": "\tThiết kế viên"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 107,
+    "text": "4411. \"Độ phức tạp\" và \"Tính có thể bảo trì\" là các đặc trưng phần mềm hỗ trợ cho hoạt động nào?",
+    "choices": {
+      "A": "\tLập trình chi tiết các hàm con",
+      "B": "\tRa quyết định kỹ thuật và quản lý",
+      "C": "\tThiết kế giao diện người dùng trực quan",
+      "D": "\tKiểm thử tự động toàn bộ hệ thống"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 108,
+    "text": "4412. Nếu một bảo trì viên sử dụng cả tên biến, cấu trúc chương trình, và một lưu đồ tìm thấy để xây dựng giả thuyết về cách chương trình hoạt động, họ đang sử dụng chiến lược nào?",
+    "choices": {
+      "A": "\tChiến lược từ trên xuống thuần túy",
+      "B": "\tChiến lược từ dưới lên thuần túy",
+      "C": "\tChiến lược cơ hội, kết hợp các đầu mối từ nhiều nguồn",
+      "D": "\tChiến lược dựa trên tài liệu duy nhất"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 109,
+    "text": "4413. Hãy sắp xếp chu trình chính xác các giai đoạn chính trong quá trình tái kiến tạo",
+    "choices": {
+      "A": "\tKỹ thuật Tái cấu trúc -> Kỹ thuật Đảo ngược -> Kỹ thuật Chuyển tiếp",
+      "B": "\tKỹ thuật Chuyển tiếp -> Kỹ thuật Đảo ngược -> Kỹ thuật Tái cấu trúc",
+      "C": "\tKỹ thuật Đảo ngược -> Kỹ thuật Tái cấu trúc -> Kỹ thuật Chuyển tiếp",
+      "D": "\tKỹ thuật Đảo ngược -> Kỹ thuật Chuyển tiếp -> Kỹ thuật Tái cấu trúc"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 110,
+    "text": "4414. Một hệ thống có \"tài liệu lỗi thời\" và \"mã lệnh rối, dài\" đồng thời xuất hiện. Điều này chủ yếu cảnh báo điều gì và gợi ý giải pháp kỹ thuật nào?",
+    "choices": {
+      "A": "\tCảnh báo hệ thống hoạt động ổn định, không cần can thiệp",
+      "B": "\tCảnh báo hệ thống đang trong giai đoạn phát triển ban đầu",
+      "C": "\tCảnh báo hệ thống khó bảo trì và cần được xem xét để tái kiến tạo",
+      "D": "\tCảnh báo cần thêm thời gian để viết tài liệu mới"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 111,
+    "text": "4415. Việc hiểu \"Lĩnh vực vấn đề\" của hệ thống giúp ích gì cụ thể cho phân tích viên trong bảo trì?",
+    "choices": {
+      "A": "\tGiúp lựa chọn giải thuật, phương pháp và công cụ bảo trì phù hợp",
+      "B": "\tGiúp dự đoán cách các thay đổi về quy định nghiệp vụ hay nền tảng phần cứng sẽ tác động đến hệ thống",
+      "C": "\tGiúp tính toán chính xác chi phí bảo trì hàng tháng",
+      "D": "\tGiúp thiết kế giao diện người dùng thân thiện hơn"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 112,
+    "text": "4416. Trong mô hình hiểu chương trình, chiến lược \"Từ dưới lên\" (Bottom-up) bắt đầu từ đâu?",
+    "choices": {
+      "A": "\tBắt đầu từ việc hiểu các chi tiết mức thấp như câu lệnh và biến",
+      "B": "\tBắt đầu từ việc hiểu các chi tiết mức cao như chức năng tổng thể",
+      "C": "\tBắt đầu từ việc chạy thử chương trình để xem lỗi phát sinh",
+      "D": "\tBắt đầu từ việc phỏng vấn người dùng cuối về trải nghiệm"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 113,
+    "text": "4417. Kỹ thuật Đảo ngược (Reverse Engineering) được định nghĩa là quy trình nào sau đây?",
+    "choices": {
+      "A": "\tPhân tích hệ thống để nhận dạng thành phần và tạo biểu diễn ở mức trừu tượng cao hơn",
+      "B": "\tPhân tích hệ thống để viết lại mã nguồn bằng ngôn ngữ lập trình mới hơn",
+      "C": "\tPhân tích hệ thống để tìm ra các lỗi logic và sửa chúng ngay lập tức",
+      "D": "\tPhân tích hệ thống để tối ưu hóa cơ sở dữ liệu và giảm dung lượng lưu trữ"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 114,
+    "text": "4418. Trong tái kiến tạo hướng đối tượng, \"Refactoring\" (Tái cấu trúc) nhằm mục đích gì?",
+    "choices": {
+      "A": "\tPhân phối lại biến và phương thức để chuẩn bị cho sự mở rộng",
+      "B": "\tChuyển đổi mã nguồn hướng đối tượng sang mã nguồn thủ tục",
+      "C": "\tXóa bỏ hoàn toàn các lớp cũ và viết lại các lớp mới",
+      "D": "\tTăng số lượng dòng lệnh để chương trình trông phức tạp hơn"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 115,
+    "text": "4419. Một phần mềm bị rối mã (spaghetti code). Giải pháp tối ưu dài hạn là:",
+    "choices": {
+      "A": "\tTái cấu trúc mã theo chuẩn mới",
+      "B": "\tViết lại tài liệu để dễ theo dõi",
+      "C": "\tChạy thử và ghi log chi tiết",
+      "D": "\tThay đổi toàn bộ thuật toán xử lý"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 116,
+    "text": "4420. Giai đoạn nào trong quy trình Tái kiến tạo liên quan đến việc cải thiện chất lượng bên trong của các biểu diễn ở cùng một mức trừu tượng?",
+    "choices": {
+      "A": "\tKỹ thuật Đảo ngược (Reverse Engineering",
+      "B": "\tKỹ thuật Tái cấu trúc (Restructuring",
+      "C": "\tKỹ thuật Chuyển tiếp (Forward Engineering",
+      "D": "\tKỹ thuật Phục hồi (Recovery"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 117,
+    "text": "4421. Giả sử một hệ thống ngân hàng cũ cần chuyển từ giao diện ký tự sang giao diện đồ họa. Kỹ thuật nào là phù hợp nhất và tại sao?",
+    "choices": {
+      "A": "\tKỹ thuật Đảo ngược, vì nó giúp hiểu logic nghiệp vụ bên trong để viết lại hệ thống mới",
+      "B": "\tKỹ thuật Tái kiến tạo Giao diện người dùng, vì nó kết hợp đảo ngược để trích xuất mô hình giao diện và chuyển tiếp để cài đặt mới",
+      "C": "\tKỹ thuật Tái cấu trúc, vì nó cải thiện chất lượng mã nguồn hiện tại mà không thay đổi hành vi",
+      "D": "\tKỹ thuật Phục hồi đặc tả, vì nó tạo ra tài liệu đặc tả mới cho toàn bộ hệ thống"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 118,
+    "text": "4422. Điểm bắt đầu phổ biến nhất trong kỹ thuật Đảo ngược phần mềm là gì?",
+    "choices": {
+      "A": "\tTài liệu thiết kế kiến trúc ban đầu",
+      "B": "\tMã nguồn (source code) của chương trình",
+      "C": "\tYêu cầu đặc tả chức năng của người dùng",
+      "D": "\tCác báo cáo lỗi (bug reports) từ hệ thống"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 119,
+    "text": "4423. Mức trừu tượng thấp nhất của kỹ thuật đảo ngược, nơi tạo ra biểu diễn tương đương ở cùng mức trừu tượng, được gọi là gì?",
+    "choices": {
+      "A": "\tPhục hồi thiết kế",
+      "B": "\tPhục hồi đặc tả",
+      "C": "\tDẫn chứng lại tài liệu",
+      "D": "\tTái cấu trúc mã lệnh"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 120,
+    "text": "4424. Trong tái kiến tạo cơ sở dữ liệu, \"Dịch lược đồ\" (Schema Translation) là gì?",
+    "choices": {
+      "A": "\tChuyển đổi dữ liệu vật lý từ hệ thống cũ sang hệ thống",
+      "B": "\tChuyển đổi các chương trình ứng dụng để truy xuất CSDL mới",
+      "C": "\tChuyển đổi mô hình dữ liệu (ví dụ: từ mạng sang quan hệ",
+      "D": "\tChuyển đổi giao diện người dùng để nhập liệu nhanh hơn"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 121,
+    "text": "4425. Mối quan hệ giữa \"Độ phức tạp của chương trình\" và khả năng \"Hiểu chương trình\" là như thế nào?",
+    "choices": {
+      "A": "\tĐộ phức tạp càng cao thì chương trình càng dễ hiểu do có nhiều logic",
+      "B": "\tĐộ phức tạp càng cao thì chương trình càng khó hiểu và khó bảo trì",
+      "C": "\tĐộ phức tạp không ảnh hưởng gì đến khả năng hiểu chương trình",
+      "D": "\tĐộ phức tạp càng thấp thì chương trình càng khó hiểu và khó bảo trì"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 122,
+    "text": "4426. Kỹ thuật đảo ngược ở mức độ trung bình thường được gọi là gì?",
+    "choices": {
+      "A": "\tPhục hồi thiết kế",
+      "B": "\tPhục hồi đặc tả",
+      "C": "\tDẫn chứng lại tài liệu",
+      "D": "\tTái cấu trúc"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 123,
+    "text": "4427. Nhân sự nào cần trích dẫn thông tin về kiến trúc, cấu trúc dữ liệu, dòng dữ liệu để xác định cách cải tiến",
+    "choices": {
+      "A": "\tLập trình viên",
+      "B": "\tPhân tích viên",
+      "C": "\tNgười quản lý",
+      "D": "\tThiết kế viên"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 124,
+    "text": "4428. Khi một công ty muốn kéo dài thời gian sống kinh tế của một hệ thống legacy nhưng tài liệu thiết kế đã bị mất, việc sử dụng kỹ thuật Đảo ngược sẽ mang lại lợi ích gì trực tiếp nhất?",
+    "choices": {
+      "A": "\tTự động sửa tất cả các lỗi tồn đọng trong hệ thống",
+      "B": "\tPhục hồi lại thông tin thiết kế và đặc tả bị mất từ mã nguồn",
+      "C": "\tGiảm ngay lập tức độ phức tạp của mã nguồn",
+      "D": "\tThay thế toàn bộ hệ thống bằng một hệ thống mới tương đương"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 125,
+    "text": "4429. Việc hiểu \"Quan hệ Sản phẩm – Môi trường\" giúp ích gì cụ thể cho phân tích viên trong bảo trì?",
+    "choices": {
+      "A": "\tGiúp viết code hiệu quả hơn cho từng module",
+      "B": "\tGiúp dự đoán cách các thay đổi về quy định nghiệp vụ hay nền tảng phần cứng sẽ tác động đến hệ thống",
+      "C": "\tGiúp tính toán chính xác chi phí bảo trì hàng tháng",
+      "D": "\tGiúp thiết kế giao diện người dùng thân thiện hơn"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 126,
+    "text": "4430. Trong mô hình hiểu chương trình, chiến lược \"Từ trên xuống\" (Top-down) bắt đầu từ đâu?",
+    "choices": {
+      "A": "\tBắt đầu từ việc hiểu các chi tiết mức thấp như câu lệnh và biến",
+      "B": "\tBắt đầu từ việc hiểu các chi tiết mức cao như chức năng tổng thể",
+      "C": "\tBắt đầu từ việc chạy thử chương trình để xem lỗi phát sinh",
+      "D": "\tBắt đầu từ việc phỏng vấn người dùng cuối về trải nghiệm"
+    },
+    "answer": "B"
   }
 ];
