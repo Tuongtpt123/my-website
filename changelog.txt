@@ -1,0 +1,7 @@
+Cập nhật lần cuối: 20:00 31/12/2025
+What's new?
+    - CẬP NHẬT ĐỀ ÔN MỚI: CHUYỂN ĐỔI SỐ 👈👈
+    - Nút Xáo câu giờ đây đã có thể xáo luôn thứ tự các đáp án trong câu
+    - Nút Xóa tiến độ sẽ có thêm popup Confirm, không sợ bấm nhầm mất tiến trình làm bài nữa
+    - Hiện cảnh báo nếu rời trang trong khi đang làm bài
+    - Đã chỉnh sửa lại giao diện

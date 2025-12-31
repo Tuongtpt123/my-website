@@ -43,124 +43,15 @@
 
   <footer>Ứng dụng chạy hoàn toàn offline. Mỗi tab tương ứng một bộ đề riêng.
     <br>
-    Cập nhật vào: 17:15 28/12/2025
+    Cập nhật vào: 20:00 31/12/2025
   </footer>
-
-  <script>
-    let questions = [];
-    let currentIndex = 0;
-    let currentFile = null;
-
-    const questionNumber = document.getElementById("question-number");
-    const questionText = document.getElementById("question-text");
-    const choicesContainer = document.getElementById("choices");
-    const questionGrid = document.getElementById("question-grid");
-
-    // === Hàm tải file đề ===
-    async function loadQuestions(file) {
-      currentFile = file;
-      const res = await fetch(file);
-      const text = await res.text();
-
-      // Tách phần JSON từ file questions.js (bỏ const ... ;)
-      const jsonText = text
-        .replace(/^const\s+questions\s*=\s*/, "")
-        .replace(/;$/, "");
-
-      try {
-        questions = JSON.parse(jsonText);
-      } catch (err) {
-        console.error("❌ Lỗi khi đọc file:", file, err);
-        alert("Không thể đọc file " + file);
-        return;
-      }
-
-      currentIndex = 0;
-      renderGrid();
-      renderQuestion();
-    }
-
-
-    function renderQuestion() {
-      const q = questions[currentIndex];
-      if (!q) return;
-      questionNumber.textContent = `Câu ${q.id}/${questions.length}`;
-      questionText.innerHTML = `<strong>${q.text}</strong>`;
-      choicesContainer.innerHTML = "";
-
-      for (const [key, value] of Object.entries(q.choices)) {
-        const btn = document.createElement("button");
-        btn.textContent = `${key}. ${value}`;
-        btn.className = "choice-btn";
-
-        btn.addEventListener("click", () => {
-          const all = choicesContainer.querySelectorAll("button");
-          all.forEach(b => b.disabled = true);
-
-          const gridBtn = document.querySelectorAll(".grid-btn")[currentIndex];
-          gridBtn.classList.remove("answered", "wrong");
-
-          if (key === q.answer) {
-            btn.classList.add("correct");
-            gridBtn.classList.add("answered");
-          } else {
-            btn.classList.add("incorrect");
-            gridBtn.classList.add("wrong");
-            const correctBtn = Array.from(all).find(b => b.textContent.startsWith(q.answer + "."));
-            if (correctBtn) correctBtn.classList.add("correct");
-          }
-        });
-
-        choicesContainer.appendChild(btn);
-      }
-    }
-
-    function renderGrid() {
-      questionGrid.innerHTML = "";
-      questions.forEach((q, i) => {
-        const btn = document.createElement("button");
-        btn.textContent = q.id;
-        btn.className = "grid-btn";
-        btn.addEventListener("click", () => {
-          currentIndex = i;
-          renderQuestion();
-        });
-        questionGrid.appendChild(btn);
-      });
-    }
-
-    document.getElementById("next-btn").onclick = () => {
-      if (currentIndex < questions.length - 1) currentIndex++;
-      renderQuestion();
-    };
-    document.getElementById("prev-btn").onclick = () => {
-      if (currentIndex > 0) currentIndex--;
-      renderQuestion();
-    };
-
-    document.getElementById("shuffle-btn").onclick = () => {
-      questions.sort(() => Math.random() - 0.5);
-      renderGrid();
-      currentIndex = 0;
-      renderQuestion();
-    };
-
-    document.getElementById("clear-progress-btn").onclick = () => {
-      document.querySelectorAll(".grid-btn").forEach(b => b.classList.remove("answered", "wrong"));
-    };
-
-    // === Tabs chuyển đề ===
-    document.querySelectorAll(".tab-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        loadQuestions(btn.dataset.file);
-      });
-    });
-
-    // Tự động tải đề đầu tiên
-    loadQuestions("questions1.js");
-  </script>
+  <script src="script.js"></script>
+  <div id="update-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2 id="modal-title"></h2>
+    <pre id="modal-body"></pre>
+    <button id="close-modal">Đã hiểu</button>
+  </div>
+</div>
 </body>
-
 </html>
