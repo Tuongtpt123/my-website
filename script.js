@@ -16,17 +16,11 @@ function checkUpdateNotice() {
     const now = new Date();
 
     if (!lastVisit) {
-        // Lần đầu truy cập
         showUpdateDialog(true);
-    } else {
-        const lastVisitDate = new Date(lastVisit);
-        if (lastVisitDate < SITE_UPDATED_AT) {
-            // Website đã cập nhật kể từ lần dùng trước
-            showUpdateDialog(false);
-        }
+    } else if (new Date(lastVisit) < SITE_UPDATED_AT) {
+        showUpdateDialog(false);
     }
 
-    // Cập nhật lại thời gian truy cập
     localStorage.setItem("lastVisitTime", now.toISOString());
 }
 
@@ -41,14 +35,22 @@ async function loadChangeLog() {
 }
 
 async function showUpdateDialog(isFirstTime) {
-    const logText = await loadChangeLog();
+    const modal = document.getElementById("update-modal");
+    const titleEl = document.getElementById("modal-title");
+    const bodyEl = document.getElementById("modal-body");
 
-    const title = isFirstTime
+    titleEl.textContent = isFirstTime
         ? "Chào mừng bạn lần đầu sử dụng 🎉"
         : "Website đã được cập nhật 🔔";
 
-    alert(`${title}\n\n${logText}`);
+    bodyEl.textContent = await loadChangeLog();
+
+    modal.classList.remove("hidden");
 }
+
+document.getElementById("close-modal").onclick = () => {
+    document.getElementById("update-modal").classList.add("hidden");
+};
 checkUpdateNotice();
 
 /* ================== UTIL ================== */
