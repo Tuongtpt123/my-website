@@ -3,7 +3,7 @@ let currentIndex = 0;
 let currentFile = null;
 let userAnswers = {}; // lưu đáp án người dùng
 
-const SITE_UPDATED_AT = new Date("2025-12-28T17:15:00"); // Cập nhật lần cuối
+const SITE_UPDATED_AT = new Date("2026-02-22T22:59:00"); // Cập nhật lần cuối
 
 const questionNumber = document.getElementById("question-number");
 const questionText = document.getElementById("question-text");
@@ -87,12 +87,13 @@ async function loadQuestions(file) {
     const text = await res.text();
 
     const jsonText = text
-        .replace(/^const\s+questions\s*=\s*/, "")
-        .replace(/;$/, "");
+    .replace(/^\s*const\s+questions\s*=\s*/, "")
+    .replace(/;\s*$/, "");
 
     try {
         questions = JSON.parse(jsonText);
     } catch (err) {
+        console.log(err);
         alert("Không thể đọc file " + file);
         return;
     }
