@@ -1,14 +1,14 @@
 const questions = [
   {
     "id": 1,
-    "text": "1. .NET Framework 4.0 giới thiệu một số tính năng mới cho ngôn ngữ XAML. Thế hệ thứ hai của ngôn ngữ XAML này được gọi là:",
+    "text": "1. .NET Framework 4.0 giới thiệu một số tính năng mới cho ngôn ngữ XAML. Thếhệ thứ hai của ngôn ngữ XAML này được gọi là:",
     "choices": {
       "A": "XAML2006",
       "B": "XAML2008",
       "C": "XAML2009",
       "D": "Không có câu trả lời nào trong số này"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@ const questions = [
       "C": "Windows Presentation Foundation",
       "D": "Không có câu trả lời nào trong số này"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 3,
@@ -45,14 +45,14 @@ const questions = [
   },
   {
     "id": 5,
-    "text": "5. Điều khiển nào được sử dụng cho phép sử dụng mẫu đặt sẵn để chấp nhận hoặc từ chối đầu vào của người dùng?",
+    "text": "5. Điều khiển nào được sử dụng cho phép sử dụng mẫu đặt sẵn để chấp nhận hoặctừ chối đầu vào của người dùng?",
     "choices": {
       "A": "TextBox",
       "B": "PatternBox",
       "C": "PatternTextBox",
       "D": "MaskedTextBox"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@ const questions = [
       "C": "String",
       "D": "Integer"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@ const questions = [
       "C": "Cả a và b đều đúng",
       "D": "Không có điều nào ở trên đúng."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@ const questions = [
       "C": "Cả (a) và (b)",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 9,
@@ -107,7 +107,7 @@ const questions = [
       "C": "XAML Browser Automation",
       "D": "XAML Browser Application"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@ const questions = [
       "C": "Tunneling Event",
       "D": "Tất cả những điều trên"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 13,
@@ -140,7 +140,7 @@ const questions = [
       "C": "Gọi phương thức RunWorkerAsync và Xử lý sự kiện DoWork",
       "D": "Thành phần BackgroundWorker không hỗ trợ sự kiện DoWork"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 14,
@@ -151,7 +151,7 @@ const questions = [
       "C": "RotateTransform (Biến đổi Xoay)",
       "D": "Tất cả những điều trên"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 15,
@@ -162,7 +162,7 @@ const questions = [
       "C": "WSDL",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 16,
@@ -184,7 +184,7 @@ const questions = [
       "C": "NET Framework 3.0 trở lên",
       "D": "Không có điều nào ở trên."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 18,
@@ -195,7 +195,7 @@ const questions = [
       "C": "Property triggers",
       "D": "Tất cả những điều trên."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 19,
@@ -206,7 +206,7 @@ const questions = [
       "C": "OpenDialog",
       "D": "Show modally"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 20,
@@ -228,7 +228,7 @@ const questions = [
       "C": "Navigation Application",
       "D": "Tất cả những loại ứng dụng trên."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 22,
@@ -249,7 +249,7 @@ const questions = [
       "C": "Navigation Window",
       "D": "Tất cả những điều trên."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 24,
@@ -260,7 +260,7 @@ const questions = [
       "C": "Tách biệt mã thiết kế và logic",
       "D": "Tất cả những điều trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 25,
@@ -282,7 +282,7 @@ const questions = [
       "C": "WPF chỉ hỗ trợ tài nguyên logic (logical resources).",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 27,
@@ -293,7 +293,7 @@ const questions = [
       "C": "EvenlyGrid",
       "D": "UniformGrid"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 28,
@@ -304,7 +304,7 @@ const questions = [
       "C": "System.Windows.Interop",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 29,
@@ -315,7 +315,7 @@ const questions = [
       "C": "Internet Explorer",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 30,
@@ -326,7 +326,7 @@ const questions = [
       "C": "MyWindow.Show(new MyWindow());",
       "D": "MyWindow obj=new MyWindow(); Obj.Show();"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 31,
@@ -337,7 +337,7 @@ const questions = [
       "C": "All Players",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 32,
@@ -348,7 +348,7 @@ const questions = [
       "C": "Filtering",
       "D": "Tất cả những điều trên"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 33,
@@ -359,7 +359,7 @@ const questions = [
       "C": "Các thuộc tính phụ thuộc thuộc về một lớp nhưng có thể được sử dụng trong một lớp khác.",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 34,
@@ -392,7 +392,7 @@ const questions = [
       "C": "TranceParent",
       "D": "Semi-Tranceparent"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 37,
@@ -403,7 +403,7 @@ const questions = [
       "C": "Chỉ mục 1,2,3 là đúng",
       "D": "Tất cả 1,2,3,4 là đúng"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 38,
@@ -414,7 +414,7 @@ const questions = [
       "C": "Chỉ phép biến đổi tỉ lệ (scaling)",
       "D": "Có cả 3 phép biến đổi rotation, scaling, và skewing"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 39,
@@ -425,7 +425,7 @@ const questions = [
       "C": "DragDrop",
       "D": "Không có điều nào ở trên."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 40,
@@ -436,7 +436,7 @@ const questions = [
       "C": "StaticResource và Dynamic Resource",
       "D": "Không có điều nào ở trên."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 41,
@@ -458,7 +458,7 @@ const questions = [
       "C": "DataReader",
       "D": "System.Data"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 43,
@@ -469,7 +469,7 @@ const questions = [
       "C": "Viewstate",
       "D": "Application"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 44,
@@ -480,7 +480,7 @@ const questions = [
       "C": "<TextBlock>This is my < HyperLink NavigateUri=”MyPage.xaml”>Hyperlink< / Hyperlink>< /TextBlock>",
       "D": "<TextBlock>This is my < HyperLink NavigateUri=”MyPage.aspx”>Hyperlink< / Hyperlink>< /TextBlock>"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 45,
@@ -491,7 +491,7 @@ const questions = [
       "C": "Frozen and unfrozen.",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 46,
@@ -502,7 +502,7 @@ const questions = [
       "C": "Chỉ có 3,4",
       "D": "tất cả 1,2,3,4"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 47,
@@ -513,7 +513,7 @@ const questions = [
       "C": "Đặt thuộc tính Target thành điều khiển đích. Đặt trước chữ cái của khóa ghi nhớ bằng kýhiệu gạch dưới trong thuộc tính Nội dung của điều khiển Nhãn.",
       "D": "Không có điều nào ở trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 48,
@@ -524,7 +524,7 @@ const questions = [
       "C": "video",
       "D": "Tất cả những điều trên"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 49,
@@ -546,7 +546,7 @@ const questions = [
       "C": "Cả a và b đều đúng",
       "D": "Cả a và b đều sai"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 51,
@@ -557,7 +557,7 @@ const questions = [
       "C": "Cả a và b đều đúng",
       "D": "Cả a và b đều sai"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 52,
@@ -568,7 +568,7 @@ const questions = [
       "C": "Cả hai phương thức trên đều đúng",
       "D": "Cả hai phương thức trên đều sai"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 53,
@@ -579,7 +579,7 @@ const questions = [
       "C": "2",
       "D": "Không giới hạn số lượng"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 54,
@@ -589,7 +589,7 @@ const questions = [
       "B": "Mã trình (C# hoặc Visual Basic)",
       "C": "Cả A và B"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 55,
@@ -609,7 +609,7 @@ const questions = [
       "A": "Đúng",
       "B": "Sai"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 57,
@@ -627,7 +627,7 @@ const questions = [
       "A": "Đúng",
       "B": "Sai"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 59,
@@ -638,7 +638,7 @@ const questions = [
       "C": "Header",
       "D": "Source"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 60,
@@ -658,7 +658,7 @@ const questions = [
       "B": "CommandTarget",
       "C": "Cả hai thuộc tính trên"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 62,
@@ -667,7 +667,7 @@ const questions = [
       "A": "Đúng",
       "B": "Sai"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 63,
@@ -687,7 +687,7 @@ const questions = [
       "C": "Text",
       "D": "Tooltip"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 65,
@@ -708,7 +708,7 @@ const questions = [
       "B": "Nằm dọc",
       "C": "Được phép nằm cả theo chiều dọc và chiều ngang."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 67,
@@ -729,7 +729,7 @@ const questions = [
       "C": "Chuột phải",
       "D": "Cả ba loại chuột đều được"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 69,
@@ -751,7 +751,7 @@ const questions = [
       "C": "Không quan trọng vị trí",
       "D": "Phụ thuộc vào loại điều khiển"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 71,
@@ -773,7 +773,7 @@ const questions = [
       "C": "Chỉ chứa tối đa 2 phần tử",
       "D": "Phụ thuộc vào hệ điều hành"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 73,
@@ -784,7 +784,7 @@ const questions = [
       "C": "Các điều khiển khác như Button, ProgressBar,..",
       "D": "Cả ba loại trên."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 74,
@@ -794,7 +794,7 @@ const questions = [
       "B": "Kết nối sự kiện với hàm xử lý sự kiện",
       "C": "Cả hai công việc trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 75,
@@ -805,7 +805,7 @@ const questions = [
       "C": "Sự kiện trực tiếp",
       "D": "Một trong ba phương án a, b, c, tuỳ thuộc vào chiến lược dẫn tuyến của sự kiện đó"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 76,
@@ -815,7 +815,7 @@ const questions = [
       "B": "Lan truyền theo một trong hai hướng: từ phần từ nguồn đến nút gốc hoặc từ phần tử nguồn đến các nút con của nó",
       "C": "Chỉ lan truyền (ngược hay xuôi) qua các phần từ nằm trong đoạn từ nút gốc tới phần tử nguồn mà có quan hệ họ hàng với phần tử nguồn."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 77,
@@ -825,7 +825,7 @@ const questions = [
       "B": "Lan truyền từ nút gốc đến phần tử nguồn trong cây trực quan",
       "C": "Lan truyền từ phần tử nguồn xuống các nút con trong cây trực quan"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 78,
@@ -835,7 +835,7 @@ const questions = [
       "B": "Việc gắn kết chỉ có tác dụng thiết lập việc phát thông báo cho đối tượng chịu tác động lệnhbiết nó được ra lệnh gì mỗi khi lệnh được gọi, còn người lập trình phải viết mã lệnh thực thi lệnh đó như thế nào",
       "C": "Nguồn phát lệnh xác định việc thực thi hành động"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 79,
@@ -846,7 +846,7 @@ const questions = [
       "C": "Lệnh có định tuyến cho phép ta liên kết phím nóng và các dạng nhập liệu khác như cơ chế phát động lệnh",
       "D": "Cả ba ưu điểm trên."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 80,
@@ -856,7 +856,7 @@ const questions = [
       "B": "Không đơn vị xử lý nào khác được gọi",
       "C": "Còn tuỳ lệnh đó có được đánh dấu “đã xử lý” hay chưa"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 81,
@@ -867,7 +867,7 @@ const questions = [
       "C": "Các đối tượng UI thuộc các lớp khác nhau nhưng cùng kế thừa từ một lớp UI (ví dụ, Control) quy định bởi thuộc tính TargetType trong thành phần Style đã định; và có thuộc tính Style tham chiếu đến khóa của Style đã định (trường hợp Style có đặt khóa định danhx:Key)",
       "D": "b hoặc c tương ứng với từng trường hợp Style đã định có khóa định danh x:Key hay không"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 82,
@@ -876,7 +876,7 @@ const questions = [
       "A": "Hàm xử lý sự kiện tương ứng với một sự kiện xảy ra trên đối tượng UI có áp dụng Style",
       "B": "Những thay đổi về thuộc tính hiển thị khi những điều kiện nhất định trên đối tượng UI có ápdụngStyle được thoả mãn"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 83,
@@ -895,7 +895,7 @@ const questions = [
       "B": "MultiTrigger",
       "C": "DataTrigger"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 85,
@@ -906,7 +906,7 @@ const questions = [
       "C": "Style và ControlTemplate có chức năng hoàn toàn giống nhau",
       "D": "ControlTemplate chỉ dùng cho TextBox, còn Style dùng cho tất cả điều khiển"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 86,
@@ -916,7 +916,7 @@ const questions = [
       "B": "Trong một file .xaml riêng và được tham chiếu trong file giao diện có sử dụng Style hoặc Template thông qua khai báo đường dẫn trong phần tử <ResourceDictionary>",
       "C": "Một trong hai phương án trên"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 87,
@@ -926,7 +926,7 @@ const questions = [
       "B": "Mã lệnh C#",
       "C": "Cả hai"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 88,
@@ -936,7 +936,7 @@ const questions = [
       "B": "N+1 cặp tọa độ",
       "C": "N-1 cặp tọa độ"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 89,
@@ -945,7 +945,7 @@ const questions = [
       "A": "Các thuộc tính Left, Top, Right, Bottom",
       "B": "Các thuộc tính Left, Top, Width, Height"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 90,
@@ -954,7 +954,7 @@ const questions = [
       "A": "Các thuộc tính Tọa độ tâm của Ellipse và các bán kính của nó",
       "B": "Hình chữ nhật ngoại tiếp của Ellipse."
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 91,
@@ -975,7 +975,7 @@ const questions = [
       "C": "Tô màu bởi hình ảnh có sẵn",
       "D": "Đáp án A,B,C"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 93,
@@ -986,7 +986,7 @@ const questions = [
       "C": "Giữ nguyên kích thước và tự động xếp lợp phủ kín đối tượng.",
       "D": "Không đáp án nào đúng."
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 94,
@@ -1008,7 +1008,7 @@ const questions = [
       "C": "HTML",
       "D": "DirectX"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 96,
@@ -1019,7 +1019,7 @@ const questions = [
       "C": "Nó được dùng để định nghĩa giao diện người dùng trong WPF.",
       "D": "Tất cả những điều trên."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 97,
@@ -1030,7 +1030,7 @@ const questions = [
       "C": "FlowLayoutPanel",
       "D": "DockPanel"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 98,
@@ -1041,7 +1041,7 @@ const questions = [
       "C": "DataContext",
       "D": "DataBinding"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 99,
@@ -1052,7 +1052,7 @@ const questions = [
       "C": "Style",
       "D": "ResourceDictionary"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 100,
@@ -1063,7 +1063,7 @@ const questions = [
       "C": "Style",
       "D": "ResourceDictionary"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 101,
@@ -1074,7 +1074,7 @@ const questions = [
       "C": "LabelBox",
       "D": "ComboBox"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 102,
@@ -1096,7 +1096,7 @@ const questions = [
       "C": "TreeView",
       "D": "Menu"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 104,
@@ -1107,7 +1107,7 @@ const questions = [
       "C": "Style",
       "D": "Panel"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 105,
@@ -1118,7 +1118,7 @@ const questions = [
       "C": "UserInterface",
       "D": "CustomTemplate"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 106,
@@ -1129,7 +1129,7 @@ const questions = [
       "C": "ComboBox",
       "D": "TreeView"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 107,
@@ -1140,7 +1140,7 @@ const questions = [
       "C": "Style",
       "D": "ResourceDictionary"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 108,
@@ -1162,7 +1162,7 @@ const questions = [
       "C": "OneWay",
       "D": "ThreeWay"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 110,
@@ -1184,7 +1184,7 @@ const questions = [
       "C": "Style",
       "D": "ResourceDictionary"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 112,
@@ -1195,7 +1195,7 @@ const questions = [
       "C": "EventTrigger",
       "D": "ControlTrigger"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 113,
@@ -1206,7 +1206,7 @@ const questions = [
       "C": "EventTriggers",
       "D": "EventListeners"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 114,
@@ -1217,7 +1217,7 @@ const questions = [
       "C": "ImageBrush",
       "D": "TextureBrush"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 115,
@@ -1228,7 +1228,7 @@ const questions = [
       "C": "Style",
       "D": "ResourceDictionary"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 116,
@@ -1239,7 +1239,7 @@ const questions = [
       "C": "EventTriggers",
       "D": "EventListeners"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 117,
@@ -1250,7 +1250,7 @@ const questions = [
       "C": "UserInterface",
       "D": "CustomPanel"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 118,
@@ -1261,7 +1261,7 @@ const questions = [
       "C": "ComboBox",
       "D": "GroupBox"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 119,
@@ -1283,7 +1283,7 @@ const questions = [
       "C": "TreeView",
       "D": "ListView"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 121,
@@ -1294,7 +1294,7 @@ const questions = [
       "C": "TreeViewItem",
       "D": "ListViewItem"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 122,
@@ -1316,7 +1316,7 @@ const questions = [
       "C": "MultiTrigger",
       "D": "MultiDataTrigger"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 124,
@@ -1327,7 +1327,7 @@ const questions = [
       "C": "Style",
       "D": "ResourceDictionary"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 125,
@@ -1360,7 +1360,7 @@ const questions = [
       "C": "Style",
       "D": "ResourceDictionary"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 128,
@@ -1371,7 +1371,7 @@ const questions = [
       "C": "WrapPanel",
       "D": "ListView"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 129,
@@ -1393,7 +1393,7 @@ const questions = [
       "C": "[ ]",
       "D": "( )"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 131,
@@ -1415,7 +1415,7 @@ const questions = [
       "C": "[ ]",
       "D": "( )"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 133,
@@ -1426,7 +1426,7 @@ const questions = [
       "C": "[ ]",
       "D": "( )"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 134,
@@ -1437,7 +1437,7 @@ const questions = [
       "C": "ImageBrush",
       "D": "DrawingBrush"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 135,
@@ -1448,7 +1448,7 @@ const questions = [
       "C": "ImageBrush",
       "D": "DrawingBrush"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 136,
@@ -1459,7 +1459,7 @@ const questions = [
       "C": "ImageBrush",
       "D": "DrawingBrush"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 137,
@@ -1470,7 +1470,7 @@ const questions = [
       "C": "ImageBrush",
       "D": "DrawingBrush"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 138,
@@ -1503,7 +1503,7 @@ const questions = [
       "C": "KeyFrame",
       "D": "Timeline"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 141,
@@ -1514,7 +1514,7 @@ const questions = [
       "C": "KeyFrame",
       "D": "Timeline"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 142,
@@ -1525,7 +1525,7 @@ const questions = [
       "C": "Target",
       "D": "Storyboard"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 143,
@@ -1558,7 +1558,7 @@ const questions = [
       "C": "EasingFunction",
       "D": "EaseFunction"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 146,
@@ -1734,7 +1734,7 @@ const questions = [
       "C": "CommandHandler",
       "D": "CommandAction"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 162,
@@ -1756,7 +1756,7 @@ const questions = [
       "C": "<Rectangle>",
       "D": "<Code>"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 164,
@@ -1789,7 +1789,7 @@ const questions = [
       "C": "Nó xác định tên lớp cho tệp mã phía sau được tạo.",
       "D": "Nó gán một mã định danh duy nhất cho một phần tử."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 167,
@@ -1811,7 +1811,7 @@ const questions = [
       "C": "Nó đặt không gian tên mặc định cho tệp XAML.",
       "D": "Nó xác định kiểu dữ liệu mà một phần tử đại diện."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 169,
@@ -1833,7 +1833,7 @@ const questions = [
       "C": "mc",
       "D": "y"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 171,
@@ -1844,7 +1844,7 @@ const questions = [
       "C": "Nó tạo ra liên kết hai chiều giữa thành phần UI và nguồn dữ liệu.",
       "D": "Nó tạo ra một biểu thức liên kết được biên dịch để mang lại hiệu suất tốt hơn."
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 172,
@@ -1899,7 +1899,7 @@ const questions = [
       "C": "Object",
       "D": "Array"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 177,
@@ -1921,7 +1921,7 @@ const questions = [
       "C": "Nó đặt loại thuộc tính phụ thuộc trong XAML.",
       "D": "Nó chỉ định loại nguồn dữ liệu trong XAML."
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 179,
@@ -2031,7 +2031,7 @@ const questions = [
       "C": "Nó được sử dụng để cung cấp mã định danh duy nhất cho việc bản địa hóa.",
       "D": "Nó được sử dụng để xác định tài nguyên được đặt tên trong XAML."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 189,
@@ -2108,7 +2108,7 @@ const questions = [
       "C": "Nó được sử dụng để đặt mức truy cập của lớp được tạo.",
       "D": "Nó được sử dụng để xác định loại của một phần tử."
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 196,
@@ -2119,7 +2119,7 @@ const questions = [
       "C": "<TextBlock Text=”{Binding FirstName}” />",
       "D": "<TextBlock Path=”FirstName” />"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 197,
@@ -2130,7 +2130,7 @@ const questions = [
       "C": "<Button Margin=”10, 20, 10, 20″ />",
       "D": "<Button Style=”{Margin: 10;}” />"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 198,
@@ -2196,7 +2196,7 @@ const questions = [
       "C": "<Button Value=”Click Me” />",
       "D": "<Button Style=”{Content: Click Me;}” />"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 204,
@@ -2207,7 +2207,7 @@ const questions = [
       "C": "<ListBox.ItemTemplate> <DataTemplate> … </DataTemplate> </ListBox.ItemTemplate>",
       "D": "<DataTemplate> <ItemTemplate> … </ItemTemplate> </DataTemplate> <DataTemplate> … </DataTemplate> </ListBox.ItemTemplate>"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 205,
@@ -2251,7 +2251,7 @@ const questions = [
       "C": "MailBox",
       "D": "PasswordBox"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 209,
@@ -2262,7 +2262,7 @@ const questions = [
       "C": "Window",
       "D": "Script"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 210,
@@ -2273,7 +2273,7 @@ const questions = [
       "C": "ComboBox",
       "D": "CheckBox 52"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 211,
@@ -2284,7 +2284,7 @@ const questions = [
       "C": "Keyboard",
       "D": "Button"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 212,
@@ -2295,7 +2295,7 @@ const questions = [
       "C": "xaml",
       "D": "html"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 213,
@@ -2306,7 +2306,7 @@ const questions = [
       "C": "DockPanel",
       "D": "CanvasPanel"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 214,
@@ -2339,7 +2339,7 @@ const questions = [
       "C": "3",
       "D": "4"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 217,
@@ -2361,7 +2361,7 @@ const questions = [
       "C": "Tạo một textbox",
       "D": "Tạo một label"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 219,
@@ -2416,7 +2416,7 @@ const questions = [
       "C": "Length",
       "D": "Size"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 224,
@@ -2449,7 +2449,7 @@ const questions = [
       "C": "Border",
       "D": "Spacing"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 227,
@@ -2504,7 +2504,7 @@ const questions = [
       "C": "TextAlignment",
       "D": "ContentAlignment"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 232,
@@ -2537,7 +2537,7 @@ const questions = [
       "C": "FontSize",
       "D": "FontWeight"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 235,
@@ -2548,7 +2548,7 @@ const questions = [
       "C": "FontSize",
       "D": "FontWeight"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 236,
@@ -2559,7 +2559,7 @@ const questions = [
       "C": "FontSize",
       "D": "FontWeight"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 237,
@@ -2581,7 +2581,7 @@ const questions = [
       "C": "Color",
       "D": "Brush"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 239,
@@ -2691,7 +2691,7 @@ const questions = [
       "C": "BorderWidth",
       "D": "BorderStyle"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 249,
@@ -2768,7 +2768,7 @@ const questions = [
       "C": "<StackPanel>",
       "D": "<Grid>"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 256,
@@ -2801,7 +2801,7 @@ const questions = [
       "C": "<StackPanel>",
       "D": "<Grid>"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 259,
@@ -2867,7 +2867,7 @@ const questions = [
       "C": "<StackPanel>",
       "D": "<ResizablePanel>"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 265,
@@ -2878,7 +2878,7 @@ const questions = [
       "C": "<ItemsControl>",
       "D": "<TabControl>"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 266,
@@ -2889,7 +2889,7 @@ const questions = [
       "C": "Khi người dùng click chuột",
       "D": "Khi điều khiển bị đóng"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 267,
@@ -2900,7 +2900,7 @@ const questions = [
       "C": "Chỉ định điều khiển có được phép tương tác với người dùng hay không",
       "D": "Gắn phím tắt cho điều khiển"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 268,
@@ -2911,7 +2911,7 @@ const questions = [
       "C": "Thực thi mã trên luồng UI (giao diện người dùng)",
       "D": "Định dạng dữ liệu"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 269,
@@ -2922,7 +2922,7 @@ const questions = [
       "C": "MessageBox.Show(\"Xác nhận\", \"?\", MessageBoxButton.YesNo)",
       "D": "Alert.Show(\"Xác nhận\", MessageBoxType.YesNo)"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 270,
@@ -2933,7 +2933,7 @@ const questions = [
       "C": "InputGesture",
       "D": "Cả A, B và C"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 271,
@@ -2944,7 +2944,7 @@ const questions = [
       "C": "EventTrigger",
       "D": "DataTemplateSelector"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 272,
@@ -2955,7 +2955,7 @@ const questions = [
       "C": "Tự động thông báo khi thay đổi dữ liệu",
       "D": "Không được dùng trong WPF"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 273,
@@ -2966,7 +2966,7 @@ const questions = [
       "C": "GDI",
       "D": "UIElement"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 274,
@@ -2977,7 +2977,7 @@ const questions = [
       "C": "Không cần làm gì, nó kế thừa tự động",
       "D": "Sử dụng StaticResource"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 275,
@@ -2988,7 +2988,7 @@ const questions = [
       "C": "RichTextBox",
       "D": "SecureTextBox"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 276,
@@ -2999,7 +2999,7 @@ const questions = [
       "C": "Tunneling",
       "D": "Command"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 277,
@@ -3010,7 +3010,7 @@ const questions = [
       "C": "Tạo giao diện cho nhóm người dùng",
       "D": "Không có trong WPF"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 278,
@@ -3021,7 +3021,7 @@ const questions = [
       "C": "Label",
       "D": "PasswordBox"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 279,
@@ -3032,7 +3032,7 @@ const questions = [
       "C": "System.Charting",
       "D": "DataWindow"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 280,
@@ -3043,7 +3043,7 @@ const questions = [
       "C": "TextBox",
       "D": "PasswordBox"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 281,
@@ -3054,7 +3054,7 @@ const questions = [
       "C": "Hiển thị chú thích khi rê chuột",
       "D": "Hiển thị thông báo lỗi 70"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 282,
@@ -3065,7 +3065,7 @@ const questions = [
       "C": "Control",
       "D": "DependencyObject"
     },
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 283,
@@ -3076,7 +3076,7 @@ const questions = [
       "C": "Calendar",
       "D": "TimeSpanBox"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 284,
@@ -3087,7 +3087,7 @@ const questions = [
       "C": "Tạo sự kiện",
       "D": "Lưu file"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 285,
@@ -3109,7 +3109,7 @@ const questions = [
       "C": "WrapPanel",
       "D": "DockPanel"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 287,
@@ -3120,7 +3120,7 @@ const questions = [
       "C": "Xử lý dữ liệu logic",
       "D": "Hiển thị hình ảnh"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 288,
@@ -3131,7 +3131,7 @@ const questions = [
       "C": "Hiển thị",
       "D": "Hiển thị mờ"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 289,
@@ -3142,7 +3142,7 @@ const questions = [
       "C": "Routed Events",
       "D": "Keyboard Filters"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 290,
@@ -3186,7 +3186,7 @@ const questions = [
       "C": "ListBox",
       "D": "Menu"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 294,
@@ -3197,7 +3197,7 @@ const questions = [
       "C": "FileStream",
       "D": "PictureBox"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 295,
@@ -3208,7 +3208,7 @@ const questions = [
       "C": "Đầy chiều ngang theo vùng chứa",
       "D": "Không thay đổi"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 296,
@@ -3230,7 +3230,7 @@ const questions = [
       "C": "Binding = \"\"",
       "D": "@Binding"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 298,
@@ -3241,7 +3241,7 @@ const questions = [
       "C": "TextBox",
       "D": "Menu"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 299,
@@ -3252,7 +3252,7 @@ const questions = [
       "C": "new Window().ShowDialog()",
       "D": "Window.Open()"
     },
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": 300,
@@ -3263,6 +3263,6 @@ const questions = [
       "C": "Gán hình ảnh nền cho Grid",
       "D": "Không có trong WPF"
     },
-    "answer": "A"
+    "answer": "B"
   }
 ];
