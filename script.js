@@ -3,12 +3,16 @@ let currentIndex = 0;
 let currentFile = null;
 let userAnswers = {}; // lưu đáp án người dùng
 
-const SITE_UPDATED_AT = new Date("2026-03-04T23:47:00"); // Cập nhật lần cuối
+const SITE_UPDATED_AT = new Date("2026-06-07T01:24:00"); // Cập nhật lần cuối
 
 const questionNumber = document.getElementById("question-number");
 const questionText = document.getElementById("question-text");
 const choicesContainer = document.getElementById("choices");
 const questionGrid = document.getElementById("question-grid");
+
+/* ================== INIT ================== */
+loadQuestions("Question/questions.js");
+
 
 /* ================== UPDATE NOTICE ================== */
 function checkUpdateNotice() {
@@ -213,5 +217,3 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
     };
 });
 
-/* ================== INIT ================== */
-loadQuestions("questions1.js");
