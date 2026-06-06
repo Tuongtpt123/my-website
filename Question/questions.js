@@ -1,7 +1,7 @@
 const questions = [
   {
     "id": 1,
-    "text": "1. .NET Framework 4.0 giới thiệu một số tính năng mới cho ngôn ngữ XAML. Thế",
+    "text": "1. .NET Framework 4.0 giới thiệu một số tính năng mới cho ngôn ngữ XAML. Thế hệ thứ hai của ngôn ngữ XAML này được gọi là:",
     "choices": {
       "A": "XAML2006",
       "B": "XAML2008",
@@ -45,7 +45,7 @@ const questions = [
   },
   {
     "id": 5,
-    "text": "5. Điều khiển nào được sử dụng cho phép sử dụng mẫu đặt sẵn để chấp nhận hoặc",
+    "text": "5. Điều khiển nào được sử dụng cho phép sử dụng mẫu đặt sẵn để chấp nhận hoặc từ chối đầu vào của người dùng?",
     "choices": {
       "A": "TextBox",
       "B": "PatternBox",
@@ -133,7 +133,7 @@ const questions = [
   },
   {
     "id": 13,
-    "text": "13. Điều nào sau đây là bắt buộc để bắt đầu quá trình chạy nền với thành phần",
+    "text": "13. Điều nào sau đây là bắt buộc để bắt đầu quá trình chạy nền với thành phần BackgroundWorker?",
     "choices": {
       "A": "Xử lý sự kiện ProgressChanged",
       "B": "Đặt thuộc tính WorkerSupportsCancellation thành true",
@@ -155,7 +155,7 @@ const questions = [
   },
   {
     "id": 15,
-    "text": "15. Trong WPF, ngôn ngữ ___________ được sử dụng để thể hiện giao diện người",
+    "text": "15. Trong WPF, ngôn ngữ ___________ được sử dụng để thể hiện giao diện người dùng.",
     "choices": {
       "A": "XML",
       "B": "XAML",
@@ -286,7 +286,7 @@ const questions = [
   },
   {
     "id": 27,
-    "text": "27. Điều khiển bố cục (layout) nào sẽ là lựa chọn tốt nhất cho giao diện người dùng",
+    "text": "27. Điều khiển bố cục (layout) nào sẽ là lựa chọn tốt nhất cho giao diện người dùng yêu cầu các điều khiển được bố trí cách đều nhau?",
     "choices": {
       "A": "Grid",
       "B": "Canvas",
@@ -396,7 +396,7 @@ const questions = [
   },
   {
     "id": 37,
-    "text": "37. Điều nào sau đây là đúng?",
+    "text": "37. Điều nào sau đây là đúng? 1.Tunneling Event được nâng lên đầu tiên bởi vùng chứa trên cùng. 2.PreviewMouseDown là Tunneling Event 3.PreviewKeyDown là Tunneling Event 4.MouseDown là Bubbling Event",
     "choices": {
       "A": "Chỉ mục 1,2 là đúng",
       "B": "Chỉ mục 2,4 là đúng",
@@ -418,7 +418,7 @@ const questions = [
   },
   {
     "id": 39,
-    "text": "39. Trong WPF dành cho tính năng Kéo (Drag) và Thả (Drop), lớp nào được sử",
+    "text": "39. Trong WPF dành cho tính năng Kéo (Drag) và Thả (Drop), lớp nào được sử dụng?",
     "choices": {
       "A": "DoDragDrop",
       "B": "WPF Không hỗ trợ tính năng Kéo (Drag) và Thả (Drop)",
@@ -440,7 +440,7 @@ const questions = [
   },
   {
     "id": 41,
-    "text": "41. Bằng cách sử dụng điều khiển nào, bạn có thể đặt thuộc tính của điều khiển",
+    "text": "41. Bằng cách sử dụng điều khiển nào, bạn có thể đặt thuộc tính của điều khiển trong thời gian chạy?",
     "choices": {
       "A": "PropertyGrid",
       "B": "Grid",
@@ -495,7 +495,7 @@ const questions = [
   },
   {
     "id": 46,
-    "text": "46. Các Chế độ liên kết dữ liệu (Data Binding Modes) khác nhau có sẵn trong",
+    "text": "46. Các Chế độ liên kết dữ liệu (Data Binding Modes) khác nhau có sẵn trong Windows Present Foundation là gì? 1)OneWay 2) TwoWay 3) OneWayToSource 4) OneTime",
     "choices": {
       "A": "Chỉ có 1,2",
       "B": "Chỉ có 2,3",
@@ -506,7 +506,7 @@ const questions = [
   },
   {
     "id": 47,
-    "text": "47. Làm cách nào bạn có thể đặt khóa ghi nhớ (mnemonics key) hoạt động cho",
+    "text": "47. Làm cách nào bạn có thể đặt khóa ghi nhớ (mnemonics key) hoạt động cho nhãn?",
     "choices": {
       "A": "Đặt thuộc tính Khóa ghi nhớ trên điều khiển Nhãn.",
       "B": "Bạn phải đặt cả điều khiển Nhãn và thuộc tính Target trong cùng một vùng chứa.",
@@ -517,7 +517,7 @@ const questions = [
   },
   {
     "id": 48,
-    "text": "48. Hoạt ảnh đường dẫn (Path animation) là một loại __________________ trong đó",
+    "text": "48. Hoạt ảnh đường dẫn (Path animation) là một loại __________________ trong đó đối tượng hoạt hình đi theo một đường dẫn được thiết lập bởi hình học Đường dẫn (Path geometry).",
     "choices": {
       "A": "audio",
       "B": "animation",
@@ -528,7 +528,7 @@ const questions = [
   },
   {
     "id": 49,
-    "text": "49. Khung giao diện người dùng (UI framework) nào sau đây là khung giao diện",
+    "text": "49. Khung giao diện người dùng (UI framework) nào sau đây là khung giao diện người dùng để xây dựng các ứng dụng máy tính để bàn Windows?",
     "choices": {
       "A": "WPF",
       "B": "ASP.NET",
@@ -561,7 +561,7 @@ const questions = [
   },
   {
     "id": 52,
-    "text": "52. Ứng dụng WPF sử dụng cách tiếp cận nào để bố trí các phần tử trên giao diện",
+    "text": "52. Ứng dụng WPF sử dụng cách tiếp cận nào để bố trí các phần tử trên giao diện người dùng?",
     "choices": {
       "A": "Phương thức áp đặt (imperative)",
       "B": "Phương thức khai báo (declarative)",
@@ -572,7 +572,7 @@ const questions = [
   },
   {
     "id": 53,
-    "text": "53. Trừ các dạng panel, các phần tử UI trong WPF như Label, Button cho phép",
+    "text": "53. Trừ các dạng panel, các phần tử UI trong WPF như Label, Button cho phép chứa tối đa bao nhiêu phần tử con?",
     "choices": {
       "A": "0",
       "B": "1",
@@ -622,7 +622,7 @@ const questions = [
   },
   {
     "id": 58,
-    "text": "58. Khi dùng thẻ <TextBox> để tạo hộp soạn thảo, bắt buộc phải kết thúc bằng thẻ",
+    "text": "58. Khi dùng thẻ <TextBox> để tạo hộp soạn thảo, bắt buộc phải kết thúc bằng thẻ đóng </TextBox>:",
     "choices": {
       "A": "Đúng",
       "B": "Sai"
@@ -631,7 +631,7 @@ const questions = [
   },
   {
     "id": 59,
-    "text": "59. Trong điều khiển Expander, ta thường tạo dòng text mô tả nội dung bên trong",
+    "text": "59. Trong điều khiển Expander, ta thường tạo dòng text mô tả nội dung bên trong của Expander, luôn xuất hiện trên Expander bên cạnh mũi tên chỉ trạng thái của Expander. Muốn thiết lập nội dung của dòng text này, ta dùng thuộc tính gì của điều khiển Expander?",
     "choices": {
       "A": "Content",
       "B": "Text",
@@ -642,7 +642,7 @@ const questions = [
   },
   {
     "id": 60,
-    "text": "60. Trong ToolBar kết hợp với RichTextBox, thuộc tính nào của nút bấm hai trạng",
+    "text": "60. Trong ToolBar kết hợp với RichTextBox, thuộc tính nào của nút bấm hai trạng thái ToggleButton xác định chức năng sửa đổi văn bản cần kích hoạt?",
     "choices": {
       "A": "Command",
       "B": "CommandTarget",
@@ -652,7 +652,7 @@ const questions = [
   },
   {
     "id": 61,
-    "text": "61. Trong ToolBar kết hợp với RichTextBox, thuộc tính nào của nút bấm hai trạng",
+    "text": "61. Trong ToolBar kết hợp với RichTextBox, thuộc tính nào của nút bấm hai trạng thái ToggleButton xác định đối tượng RichTextBox có chức năng sửa đổi văn bản cần kích hoạt?",
     "choices": {
       "A": "Command",
       "B": "CommandTarget",
@@ -691,7 +691,7 @@ const questions = [
   },
   {
     "id": 65,
-    "text": "65. Các thuộc tính được có thể được sử dụng để gán lệnh cho một Menu Item (Chọn",
+    "text": "65. Các thuộc tính được có thể được sử dụng để gán lệnh cho một Menu Item (Chọn nhiều)",
     "choices": {
       "A": "Command",
       "B": "Click",
@@ -744,7 +744,7 @@ const questions = [
   },
   {
     "id": 70,
-    "text": "70. Câu lệnh XAML định nghĩa thực đơn ngữ cảnh phải nằm trong cặp thẻ định nghĩa",
+    "text": "70. Câu lệnh XAML định nghĩa thực đơn ngữ cảnh phải nằm trong cặp thẻ định nghĩa điều khiển chứa thực đơn?",
     "choices": {
       "A": "Đúng",
       "B": "Sai",
@@ -829,7 +829,7 @@ const questions = [
   },
   {
     "id": 78,
-    "text": "78. Khi gắn kết một lệnh với một đối tượng chịu tác động của lệnh, việc thực hiện",
+    "text": "78. Khi gắn kết một lệnh với một đối tượng chịu tác động của lệnh, việc thực hiện lệnh sẽ do:",
     "choices": {
       "A": "Bản thân lệnh đó tự thực thi hành động tương ứng với ngữ nghĩa của nó, người lập trình không phải tác động thêm gì",
       "B": "Việc gắn kết chỉ có tác dụng thiết lập việc phát thông báo cho đối tượng chịu tác động lệnhbiết nó được ra lệnh gì mỗi khi lệnh được gọi, còn người lập trình phải viết mã lệnh thực thi lệnh đó như thế nào",
@@ -850,7 +850,7 @@ const questions = [
   },
   {
     "id": 80,
-    "text": "80. Trong mô hình lệnh có định tuyến, một khi một đơn vị xử lý lệnh đã được kích hoạt",
+    "text": "80. Trong mô hình lệnh có định tuyến, một khi một đơn vị xử lý lệnh đã được kích hoạt thực hiện:",
     "choices": {
       "A": "Giống như sự kiện có định tuyến, lệnh lại được lan truyền tiếp, do vậy, có thể có nhiều đơn vị xử lý lệnh khác sẽ được thực hiện",
       "B": "Không đơn vị xử lý nào khác được gọi",
@@ -889,7 +889,7 @@ const questions = [
   },
   {
     "id": 84,
-    "text": "84. Loại Trigger nào sau đây cho phép thiết lập nhiều điều kiện cho một dạng thay",
+    "text": "84. Loại Trigger nào sau đây cho phép thiết lập nhiều điều kiện cho một dạng thay đổi thuộc tính hiển thị:",
     "choices": {
       "A": "EventTrigger",
       "B": "MultiTrigger",
@@ -899,7 +899,7 @@ const questions = [
   },
   {
     "id": 85,
-    "text": "85. Sự khác biệt giữa Style và ControlTemplate áp dụng cho một lớp đối tượng UI là gì?",
+    "text": "85. Sự khác biệt giữa Style và ControlTemplate áp dụng cho một lớp đối tượng UI là gì? gì?",
     "choices": {
       "A": "Style dùng để xử lý sự kiện, còn ControlTemplate dùng để liên kết dữ liệu",
       "B": "Style cho phép thay đổi các thuộc tính hiển thị của điều khiển, còn ControlTemplate cho phép thay đổi cấu trúc và giao diện hiển thị của điều khiển",
@@ -990,7 +990,7 @@ const questions = [
   },
   {
     "id": 94,
-    "text": "94. Khung giao diện người dùng nào sau đây là khung giao diện người dùng để xây dựng",
+    "text": "94. Khung giao diện người dùng nào sau đây là khung giao diện người dùng để xây dựng các ứng dụng máy tính để bàn Windows?",
     "choices": {
       "A": "WPF",
       "B": "ASP.NET",
@@ -1034,7 +1034,7 @@ const questions = [
   },
   {
     "id": 98,
-    "text": "98. Cách nào sau đây được sử dụng để liên kết dữ liệu với các thành phần giao diện người",
+    "text": "98. Cách nào sau đây được sử dụng để liên kết dữ liệu với các thành phần giao diện người dùng (UI) trong WPF?",
     "choices": {
       "A": "DataTemplates",
       "B": "DataGrids",
@@ -1045,7 +1045,7 @@ const questions = [
   },
   {
     "id": 99,
-    "text": "99. Điều nào sau đây được sử dụng để định nghĩa kiểu trực quan (visual style) trong",
+    "text": "99. Điều nào sau đây được sử dụng để định nghĩa kiểu trực quan (visual style) trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1056,7 +1056,7 @@ const questions = [
   },
   {
     "id": 100,
-    "text": "100. Điều nào sau đây được sử dụng để định nghĩa mẫu (template) hiển thị dữ liệu trong",
+    "text": "100. Điều nào sau đây được sử dụng để định nghĩa mẫu (template) hiển thị dữ liệu trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1100,7 +1100,7 @@ const questions = [
   },
   {
     "id": 104,
-    "text": "104. Cách nào sau đây được sử dụng để nhóm các thành phần UI có liên quan trong",
+    "text": "104. Cách nào sau đây được sử dụng để nhóm các thành phần UI có liên quan trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1122,7 +1122,7 @@ const questions = [
   },
   {
     "id": 106,
-    "text": "106. Cách nào sau đây được sử dụng để hiển thị tập hợp các mục ở định dạng bảng trong",
+    "text": "106. Cách nào sau đây được sử dụng để hiển thị tập hợp các mục ở định dạng bảng trong WPF?",
     "choices": {
       "A": "ListBox",
       "B": "DataGrid",
@@ -1133,7 +1133,7 @@ const questions = [
   },
   {
     "id": 107,
-    "text": "107. Điều nào sau đây được sử dụng để định nghĩa tài nguyên có thể tái sử dụng trong",
+    "text": "107. Điều nào sau đây được sử dụng để định nghĩa tài nguyên có thể tái sử dụng trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1144,7 +1144,7 @@ const questions = [
   },
   {
     "id": 108,
-    "text": "108. Điều nào sau đây được sử dụng để xác định mẫu cho điều khiển tùy chỉnh trong",
+    "text": "108. Điều nào sau đây được sử dụng để xác định mẫu cho điều khiển tùy chỉnh trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1166,7 +1166,7 @@ const questions = [
   },
   {
     "id": 110,
-    "text": "110. Điều nào sau đây được sử dụng để xác định hệ thống phân cấp tài nguyên trong",
+    "text": "110. Điều nào sau đây được sử dụng để xác định hệ thống phân cấp tài nguyên trong WPF?",
     "choices": {
       "A": "ResourceDictionary",
       "B": "Style",
@@ -1177,7 +1177,7 @@ const questions = [
   },
   {
     "id": 111,
-    "text": "111. Điều nào sau đây được sử dụng để thiết lập giao diện trực quan của điều khiển trong",
+    "text": "111. Điều nào sau đây được sử dụng để thiết lập giao diện trực quan của điều khiển trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1221,7 +1221,7 @@ const questions = [
   },
   {
     "id": 115,
-    "text": "115. Điều nào sau đây được sử dụng để xác định một tập hợp các tài nguyên trực quan có",
+    "text": "115. Điều nào sau đây được sử dụng để xác định một tập hợp các tài nguyên trực quan có liên quan trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1232,7 +1232,7 @@ const questions = [
   },
   {
     "id": 116,
-    "text": "116. Điều nào sau đây được sử dụng để xác định hành vi của điều khiển nhằm phản hồi",
+    "text": "116. Điều nào sau đây được sử dụng để xác định hành vi của điều khiển nhằm phản hồi đầu vào của người dùng trong WPF?",
     "choices": {
       "A": "EventHandlers",
       "B": "CommandBindings",
@@ -1265,7 +1265,7 @@ const questions = [
   },
   {
     "id": 119,
-    "text": "119. Điều nào sau đây được sử dụng để hiển thị danh sách các mục có thể được chọn trong",
+    "text": "119. Điều nào sau đây được sử dụng để hiển thị danh sách các mục có thể được chọn trong WPF?",
     "choices": {
       "A": "ListBox",
       "B": "ComboBox",
@@ -1276,7 +1276,7 @@ const questions = [
   },
   {
     "id": 120,
-    "text": "120. Điều nào sau đây được sử dụng để hiển thị biểu diễn dữ liệu theo thứ bậc trong",
+    "text": "120. Điều nào sau đây được sử dụng để hiển thị biểu diễn dữ liệu theo thứ bậc trong WPF?",
     "choices": {
       "A": "ListBox",
       "B": "ComboBox",
@@ -1287,7 +1287,7 @@ const questions = [
   },
   {
     "id": 121,
-    "text": "121. Điều nào sau đây được sử dụng để xác định tập hợp các mục có thể được hiển thị",
+    "text": "121. Điều nào sau đây được sử dụng để xác định tập hợp các mục có thể được hiển thị trong ComboBox trong WPF?",
     "choices": {
       "A": "ListBoxItem",
       "B": "ComboBoxItem",
@@ -1298,7 +1298,7 @@ const questions = [
   },
   {
     "id": 122,
-    "text": "122. Điều nào sau đây được sử dụng để xác định bố cục và diện mạo của điều khiển trong",
+    "text": "122. Điều nào sau đây được sử dụng để xác định bố cục và diện mạo của điều khiển trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1309,7 +1309,7 @@ const questions = [
   },
   {
     "id": 123,
-    "text": "123. Điều nào sau đây được sử dụng để thiết lập giao diện của điều khiển dựa trên một",
+    "text": "123. Điều nào sau đây được sử dụng để thiết lập giao diện của điều khiển dựa trên một điều kiện trong WPF?",
     "choices": {
       "A": "PropertyTrigger",
       "B": "DataTrigger",
@@ -1320,7 +1320,7 @@ const questions = [
   },
   {
     "id": 124,
-    "text": "124. Điều nào sau đây được sử dụng để xác định tập hợp các tài nguyên liên quan có thể",
+    "text": "124. Điều nào sau đây được sử dụng để xác định tập hợp các tài nguyên liên quan có thể được áp dụng cho điều khiển trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1331,7 +1331,7 @@ const questions = [
   },
   {
     "id": 125,
-    "text": "125. Điều nào sau đây được sử dụng để xác định cách bố trí của một điều khiển trong",
+    "text": "125. Điều nào sau đây được sử dụng để xác định cách bố trí của một điều khiển trong WPF?",
     "choices": {
       "A": "DockPanel",
       "B": "StackPanel",
@@ -1342,7 +1342,7 @@ const questions = [
   },
   {
     "id": 126,
-    "text": "126. Điều nào sau đây được sử dụng để xác định bối cảnh dữ liệu cho điều khiển trong",
+    "text": "126. Điều nào sau đây được sử dụng để xác định bối cảnh dữ liệu cho điều khiển trong WPF?",
     "choices": {
       "A": "DataContext",
       "B": "Binding",
@@ -1353,7 +1353,7 @@ const questions = [
   },
   {
     "id": 127,
-    "text": "127. Điều nào sau đây được sử dụng để xác định tập hợp các tài nguyên liên quan có thể",
+    "text": "127. Điều nào sau đây được sử dụng để xác định tập hợp các tài nguyên liên quan có thể được áp dụng cho cửa sổ hoặc ứng dụng trong WPF?",
     "choices": {
       "A": "ControlTemplate",
       "B": "DataTemplate",
@@ -1364,7 +1364,7 @@ const questions = [
   },
   {
     "id": 128,
-    "text": "128. Điều nào sau đây được sử dụng để hiển thị danh sách các mục theo bố cục ngang",
+    "text": "128. Điều nào sau đây được sử dụng để hiển thị danh sách các mục theo bố cục ngang hoặc dọc trong WPF?",
     "choices": {
       "A": "ListBox",
       "B": "ComboBox",
@@ -1386,7 +1386,7 @@ const questions = [
   },
   {
     "id": 130,
-    "text": "130. Điều nào sau đây được sử dụng để chỉ định biểu thức liên kết trong XAML trong",
+    "text": "130. Điều nào sau đây được sử dụng để chỉ định biểu thức liên kết trong XAML trong WPF?",
     "choices": {
       "A": "< >",
       "B": "{{ }}",
@@ -1397,7 +1397,7 @@ const questions = [
   },
   {
     "id": 131,
-    "text": "131. Điều nào sau đây được sử dụng để chỉ định trình kích hoạt (trigger) trong XAML",
+    "text": "131. Điều nào sau đây được sử dụng để chỉ định trình kích hoạt (trigger) trong XAML trong WPF?",
     "choices": {
       "A": "< >",
       "B": "{{ }}",
@@ -1441,7 +1441,7 @@ const questions = [
   },
   {
     "id": 135,
-    "text": "135. Cách nào sau đây được sử dụng để tạo cọ vẽ chuyển màu tuyến tính (linear gradient",
+    "text": "135. Cách nào sau đây được sử dụng để tạo cọ vẽ chuyển màu tuyến tính (linear gradient brush) trong WPF?",
     "choices": {
       "A": "SolidColorBrush",
       "B": "GradientBrush",
@@ -1452,7 +1452,7 @@ const questions = [
   },
   {
     "id": 136,
-    "text": "136. Điều nào sau đây được sử dụng để tạo một cọ vẽ xuyên tâm (radial gradient brush)",
+    "text": "136. Điều nào sau đây được sử dụng để tạo một cọ vẽ xuyên tâm (radial gradient brush) trong WPF?",
     "choices": {
       "A": "SolidColorBrush",
       "B": "GradientBrush",
@@ -1474,7 +1474,7 @@ const questions = [
   },
   {
     "id": 138,
-    "text": "138. Điều nào sau đây được sử dụng để tạo một cọ vẽ màu đồng nhất (solid color brush)",
+    "text": "138. Điều nào sau đây được sử dụng để tạo một cọ vẽ màu đồng nhất (solid color brush) trong WPF?",
     "choices": {
       "A": "SolidColorBrush",
       "B": "GradientBrush",
@@ -1562,7 +1562,7 @@ const questions = [
   },
   {
     "id": 146,
-    "text": "146. Cái nào sau đây được sử dụng để chỉ định thuộc tính mục tiêu của một hoạt ảnh",
+    "text": "146. Cái nào sau đây được sử dụng để chỉ định thuộc tính mục tiêu của một hoạt ảnh trong WPF?",
     "choices": {
       "A": "TargetProperty",
       "B": "Property",
@@ -1694,7 +1694,7 @@ const questions = [
   },
   {
     "id": 158,
-    "text": "158. Cái nào sau đây được sử dụng để chỉ định ràng buộc cho một data trigger trong",
+    "text": "158. Cái nào sau đây được sử dụng để chỉ định ràng buộc cho một data trigger trong WPF?",
     "choices": {
       "A": "Binding",
       "B": "DataBinding",
@@ -1716,7 +1716,7 @@ const questions = [
   },
   {
     "id": 160,
-    "text": "160. Cái nào sau đây được sử dụng để chỉ định lệnh cho một command binding trong",
+    "text": "160. Cái nào sau đây được sử dụng để chỉ định lệnh cho một command binding trong WPF?",
     "choices": {
       "A": "Command",
       "B": "Binding",
@@ -1727,7 +1727,7 @@ const questions = [
   },
   {
     "id": 161,
-    "text": "161. Cái nào sau đây được sử dụng để chỉ định phương thức xử lý lệnh trong một",
+    "text": "161. Cái nào sau đây được sử dụng để chỉ định phương thức xử lý lệnh trong một command binding trong WPF?",
     "choices": {
       "A": "CommandTarget",
       "B": "CommandMethod",
@@ -1793,7 +1793,7 @@ const questions = [
   },
   {
     "id": 167,
-    "text": "167. Cú pháp nào sau đây là dùng để đặt kích thước Font chữ của phần tử TextBlock trong",
+    "text": "167. Cú pháp nào sau đây là dùng để đặt kích thước Font chữ của phần tử TextBlock trong XAML?",
     "choices": {
       "A": "<TextBlock FontSize=”12″>",
       "B": "<TextBlock Style=”FontSize: 12;”>",
@@ -1815,7 +1815,7 @@ const questions = [
   },
   {
     "id": 169,
-    "text": "169. Cú pháp nào sau đây là dùng để đặt màu nền trước của phần tử TextBox trong",
+    "text": "169. Cú pháp nào sau đây là dùng để đặt màu nền trước của phần tử TextBox trong XAML?",
     "choices": {
       "A": "<TextBox Foreground=”Blue”>",
       "B": "<TextBox Style=”Foreground: Blue;”>",
@@ -1903,7 +1903,7 @@ const questions = [
   },
   {
     "id": 177,
-    "text": "177. Cú pháp nào sau đây là dùng để đặt kích thước phông chữ của phần tử TextBox",
+    "text": "177. Cú pháp nào sau đây là dùng để đặt kích thước phông chữ của phần tử TextBox trong XAML?",
     "choices": {
       "A": "<TextBox FontSize=”14″>",
       "B": "<TextBox Style=”FontSize: 14;”>",
@@ -1958,7 +1958,7 @@ const questions = [
   },
   {
     "id": 182,
-    "text": "182. Cú pháp nào sau đây là dùng để thiết lập căn chỉnh theo chiều ngang của phần tử",
+    "text": "182. Cú pháp nào sau đây là dùng để thiết lập căn chỉnh theo chiều ngang của phần tử StackPanel trong XAML?",
     "choices": {
       "A": "<StackPanel HorizontalAlignment=”Left”>",
       "B": "<StackPanel Style=”HorizontalAlignment: Left;”>",
@@ -1980,7 +1980,7 @@ const questions = [
   },
   {
     "id": 184,
-    "text": "184. Cú pháp nào sau đây là dùng để đặt màu nền trước của phần tử Button trong",
+    "text": "184. Cú pháp nào sau đây là dùng để đặt màu nền trước của phần tử Button trong XAML?",
     "choices": {
       "A": "<Button Foreground=”Red”>",
       "B": "<Button Style=”Foreground: Red;”>",
@@ -1991,7 +1991,7 @@ const questions = [
   },
   {
     "id": 185,
-    "text": "185. Cú pháp nào sau đây là dùng để thiết lập độ dày đường viền của phần tử Border",
+    "text": "185. Cú pháp nào sau đây là dùng để thiết lập độ dày đường viền của phần tử Border trong XAML?",
     "choices": {
       "A": "<Border BorderThickness=”2″>",
       "B": "<Border Style=”BorderThickness: 2;”>",
@@ -2013,7 +2013,7 @@ const questions = [
   },
   {
     "id": 187,
-    "text": "187. Cú pháp nào sau đây là dùng để đặt màu nền trước của phần tử TextBlock trong",
+    "text": "187. Cú pháp nào sau đây là dùng để đặt màu nền trước của phần tử TextBlock trong XAML?",
     "choices": {
       "A": "<TextBlock Foreground=”Blue”>",
       "B": "<TextBlock Style=”Foreground: Blue;”>",
@@ -2046,7 +2046,7 @@ const questions = [
   },
   {
     "id": 190,
-    "text": "190. Cú pháp nào sau đây là dùng để thiết lập độ rộng của phần tử TextBox trong",
+    "text": "190. Cú pháp nào sau đây là dùng để thiết lập độ rộng của phần tử TextBox trong XAML?",
     "choices": {
       "A": "<TextBox Width=”100″>",
       "B": "<TextBox Style=”Width: 100;”>",
@@ -2057,7 +2057,7 @@ const questions = [
   },
   {
     "id": 191,
-    "text": "191. Cú pháp nào sau đây là dùng để đặt kích thước phông chữ của thành phần Nhãn",
+    "text": "191. Cú pháp nào sau đây là dùng để đặt kích thước phông chữ của thành phần Nhãn trong XAML?",
     "choices": {
       "A": "<Label FontSize=”14″>",
       "B": "<Label Style=”FontSize: 14;”>",
@@ -2068,7 +2068,7 @@ const questions = [
   },
   {
     "id": 192,
-    "text": "192. Cú pháp nào sau đây là dùng để đặt họ Font chữ của phần tử TextBlock trong",
+    "text": "192. Cú pháp nào sau đây là dùng để đặt họ Font chữ của phần tử TextBlock trong XAML?",
     "choices": {
       "A": "<TextBlock FontFamily=”Arial”>",
       "B": "<TextBlock Style=”FontFamily: Arial;”>",
@@ -2090,7 +2090,7 @@ const questions = [
   },
   {
     "id": 194,
-    "text": "194. Cú pháp nào sau đây là dùng để thiết lập căn chỉnh văn bản của phần tử TextBox",
+    "text": "194. Cú pháp nào sau đây là dùng để thiết lập căn chỉnh văn bản của phần tử TextBox trong XAML?",
     "choices": {
       "A": "<TextBox TextAlignment=”Center”>",
       "B": "<TextBox Style=”TextAlignment: Center;”>",
@@ -2112,7 +2112,7 @@ const questions = [
   },
   {
     "id": 196,
-    "text": "196. Cú pháp nào sau đây là dùng để  liên kết thuộc tính của điều khiển với thuộc tính của",
+    "text": "196. Cú pháp nào sau đây là dùng để  liên kết thuộc tính của điều khiển với thuộc tính của nguồn dữ liệu trong XAML?",
     "choices": {
       "A": "<TextBlock Text=”{Binding Path=FirstName}” />",
       "B": "<TextBlock Binding=”FirstName” />",
@@ -2134,7 +2134,7 @@ const questions = [
   },
   {
     "id": 198,
-    "text": "198. Cú pháp nào sau đây là dùng để đặt kích thước Font chữ của điều khiển trong",
+    "text": "198. Cú pháp nào sau đây là dùng để đặt kích thước Font chữ của điều khiển trong XAML?",
     "choices": {
       "A": "<TextBlock FontSize=”14″ />",
       "B": "<TextBlock Style=”FontSize: 14;” />",
@@ -2178,7 +2178,7 @@ const questions = [
   },
   {
     "id": 202,
-    "text": "202. Cú pháp nào sau đây là dùng để tạo một phiên bản mới của điều khiển tùy chỉnh",
+    "text": "202. Cú pháp nào sau đây là dùng để tạo một phiên bản mới của điều khiển tùy chỉnh trong XAML?",
     "choices": {
       "A": "<local:MyControl />",
       "B": "<MyControl />",
@@ -2189,7 +2189,7 @@ const questions = [
   },
   {
     "id": 203,
-    "text": "203. Cú pháp nào sau đây là dùng để thiết lập nội dung của điều khiển Button trong",
+    "text": "203. Cú pháp nào sau đây là dùng để thiết lập nội dung của điều khiển Button trong XAML?",
     "choices": {
       "A": "<Button Text=”Click Me” />",
       "B": "<Button Content=”Click Me” />",
@@ -2200,7 +2200,7 @@ const questions = [
   },
   {
     "id": 204,
-    "text": "204. Cú pháp nào sau đây là dùng để tạo mẫu dữ liệu (data template) cho điều khiển",
+    "text": "204. Cú pháp nào sau đây là dùng để tạo mẫu dữ liệu (data template) cho điều khiển ListBox trong XAML?",
     "choices": {
       "A": "<ListBox> <DataTemplate> … </DataTemplate> </ListBox>",
       "B": "<DataTemplate> <ListBox> … </ListBox> </DataTemplate>",
@@ -2211,7 +2211,7 @@ const questions = [
   },
   {
     "id": 205,
-    "text": "205. Cú pháp nào sau đây là dùng để liên kết điều khiển ListBox với thuộc tính tập hợp",
+    "text": "205. Cú pháp nào sau đây là dùng để liên kết điều khiển ListBox với thuộc tính tập hợp của nguồn dữ liệu trong XAML?",
     "choices": {
       "A": "<ListBox ItemsSource=”{Binding Path=Customers}” />",
       "B": "<ListBox Items=”{Binding Path=Customers}” />",
@@ -2233,7 +2233,7 @@ const questions = [
   },
   {
     "id": 207,
-    "text": "207. Sau đây là các loại Trigger, ngoại trừ:",
+    "text": "207. Sau đây là các loại Trigger, ngoại trừ: 51",
     "choices": {
       "A": "Basic Triggers",
       "B": "Property Triggers",
@@ -2299,7 +2299,7 @@ const questions = [
   },
   {
     "id": 213,
-    "text": "213. Trong bảng bố cục nào các phần tử con được định vị theo thứ tự tuần tự từ trái sang",
+    "text": "213. Trong bảng bố cục nào các phần tử con được định vị theo thứ tự tuần tự từ trái sang phải hoặc từ trên xuống dưới dựa trên thuộc tính định hướng?",
     "choices": {
       "A": "StackPanel",
       "B": "WrapPanel",
@@ -2398,7 +2398,7 @@ const questions = [
   },
   {
     "id": 222,
-    "text": "222. Trong XAML, thuộc tính nào được sử dụng để đặt chiều rộng của một điều khiển?",
+    "text": "222. Trong XAML, thuộc tính nào được sử dụng để đặt chiều rộng của một điều khiển? 55",
     "choices": {
       "A": "Width",
       "B": "Height",
@@ -2442,7 +2442,7 @@ const questions = [
   },
   {
     "id": 226,
-    "text": "226. Thuộc tính nào trong XAML dùng để điều chỉnh kích thước của nội dung trong",
+    "text": "226. Thuộc tính nào trong XAML dùng để điều chỉnh kích thước của nội dung trong một điều khiển?",
     "choices": {
       "A": "Margin",
       "B": "Padding",
@@ -2453,7 +2453,7 @@ const questions = [
   },
   {
     "id": 227,
-    "text": "227. Thuộc tính nào trong XAML để điều chỉnh khoảng cách xung quanh một điều",
+    "text": "227. Thuộc tính nào trong XAML để điều chỉnh khoảng cách xung quanh một điều khiển?",
     "choices": {
       "A": "Margin",
       "B": "Padding",
@@ -2486,7 +2486,7 @@ const questions = [
   },
   {
     "id": 230,
-    "text": "230. Thuộc tính nào trong XAML để điều chỉnh căn chỉnh ngang của nội dung trong",
+    "text": "230. Thuộc tính nào trong XAML để điều chỉnh căn chỉnh ngang của nội dung trong một điều khiển?",
     "choices": {
       "A": "HorizontalAlignment",
       "B": "VerticalAlignment",
@@ -2497,7 +2497,7 @@ const questions = [
   },
   {
     "id": 231,
-    "text": "231. Thuộc tính nào trong XAML để điều chỉnh căn chỉnh dọc của nội dung trong một",
+    "text": "231. Thuộc tính nào trong XAML để điều chỉnh căn chỉnh dọc của nội dung trong một điều khiển?",
     "choices": {
       "A": "HorizontalAlignment",
       "B": "VerticalAlignment",
@@ -2541,7 +2541,7 @@ const questions = [
   },
   {
     "id": 235,
-    "text": "235. Thuộc tính nào trong XAML để điều chỉnh kiểu phông chữ của văn bản (in đậm,",
+    "text": "235. Thuộc tính nào trong XAML để điều chỉnh kiểu phông chữ của văn bản (in đậm, in nghiêng, v.v.)?",
     "choices": {
       "A": "FontFamily",
       "B": "FontStyle",
@@ -2563,7 +2563,7 @@ const questions = [
   },
   {
     "id": 237,
-    "text": "237. Thẻ nào trong XAML được sử dụng để tạo một khung chứa (container) có thể",
+    "text": "237. Thẻ nào trong XAML được sử dụng để tạo một khung chứa (container) có thể cuộn?",
     "choices": {
       "A": "<ScrollViewer>",
       "B": "<ScrollBar>",
@@ -2651,7 +2651,7 @@ const questions = [
   },
   {
     "id": 245,
-    "text": "245. Thuộc tính nào trong XAML để liên kết giá trị của một điều khiển với một thuộc",
+    "text": "245. Thuộc tính nào trong XAML để liên kết giá trị của một điều khiển với một thuộc tính trong mã?",
     "choices": {
       "A": "Binding",
       "B": "Source",
@@ -2717,7 +2717,7 @@ const questions = [
   },
   {
     "id": 251,
-    "text": "251. Thuộc tính nào trong XAML để điều chỉnh hướng của một điều khiển (dọc hoặc",
+    "text": "251. Thuộc tính nào trong XAML để điều chỉnh hướng của một điều khiển (dọc hoặc ngang)?",
     "choices": {
       "A": "Orientation",
       "B": "Direction",
@@ -2728,7 +2728,7 @@ const questions = [
   },
   {
     "id": 252,
-    "text": "252. Thẻ nào trong XAML được sử dụng để tạo một textbox có khả năng nhập liệu đa",
+    "text": "252. Thẻ nào trong XAML được sử dụng để tạo một textbox có khả năng nhập liệu đa dòng?",
     "choices": {
       "A": "<TextBox>",
       "B": "<TextArea>",
@@ -2750,7 +2750,7 @@ const questions = [
   },
   {
     "id": 254,
-    "text": "254. Thuộc tính nào trong XAML để điều chỉnh chế độ hiển thị của một điều khiển",
+    "text": "254. Thuộc tính nào trong XAML để điều chỉnh chế độ hiển thị của một điều khiển (visible, hidden, collapsed)?",
     "choices": {
       "A": "Visibility",
       "B": "Display",
@@ -2772,7 +2772,7 @@ const questions = [
   },
   {
     "id": 256,
-    "text": "256. Thẻ nào trong XAML được sử dụng để tạo một danh sách các mục có thể chọn",
+    "text": "256. Thẻ nào trong XAML được sử dụng để tạo một danh sách các mục có thể chọn nhiều mục?",
     "choices": {
       "A": "<ListBox>",
       "B": "<ComboBox>",
@@ -2783,7 +2783,7 @@ const questions = [
   },
   {
     "id": 257,
-    "text": "257. Thuộc tính nào trong XAML để điều chỉnh khoảng cách giữa các mục trong một",
+    "text": "257. Thuộc tính nào trong XAML để điều chỉnh khoảng cách giữa các mục trong một danh sách?",
     "choices": {
       "A": "ItemSpacing",
       "B": "ItemMargin",
@@ -2860,7 +2860,7 @@ const questions = [
   },
   {
     "id": 264,
-    "text": "264. Thẻ nào trong XAML được sử dụng để tạo một khung chứa (container) có thể",
+    "text": "264. Thẻ nào trong XAML được sử dụng để tạo một khung chứa (container) có thể thay đổi kích thước?",
     "choices": {
       "A": "<Grid>",
       "B": "<DockPanel>",
@@ -2871,7 +2871,7 @@ const questions = [
   },
   {
     "id": 265,
-    "text": "265. Thẻ nào trong XAML được sử dụng để tạo một vùng chứa (container) cho các",
+    "text": "265. Thẻ nào trong XAML được sử dụng để tạo một vùng chứa (container) cho các mục trong một danh sách?",
     "choices": {
       "A": "<ListBox>",
       "B": "<ComboBox>",
@@ -2937,7 +2937,7 @@ const questions = [
   },
   {
     "id": 271,
-    "text": "271. Giao diện người dùng trong WPF có thể phản hồi thay đổi dữ liệu thông qua?",
+    "text": "271. Giao diện người dùng trong WPF có thể phản hồi thay đổi dữ liệu thông qua? 68",
     "choices": {
       "A": "Static binding",
       "B": "INPC (INotifyPropertyChanged)",
@@ -3102,7 +3102,7 @@ const questions = [
   },
   {
     "id": 286,
-    "text": "286. Kiểu panel nào tự động sắp xếp các phần tử theo dòng và xuống hàng khi hết",
+    "text": "286. Kiểu panel nào tự động sắp xếp các phần tử theo dòng và xuống hàng khi hết chỗ?",
     "choices": {
       "A": "StackPanel",
       "B": "Canvas",

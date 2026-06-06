@@ -3,7 +3,7 @@ let currentIndex = 0;
 let currentFile = null;
 let userAnswers = {}; // lưu đáp án người dùng
 
-const SITE_UPDATED_AT = new Date("2026-06-07T01:24:00"); // Cập nhật lần cuối
+const SITE_UPDATED_AT = new Date("2026-06-07T01:46:00"); // Cập nhật lần cuối
 
 const questionNumber = document.getElementById("question-number");
 const questionText = document.getElementById("question-text");
